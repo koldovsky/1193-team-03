@@ -20,6 +20,11 @@
     ></script>
 </head>
   <body>
+    <header
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="common.header.partial.html"
+    ></header>
     <!--i will start working on project tomorrow-->
     <main>
       <div
@@ -29,8 +34,8 @@
       ></div>
     </main>
     <footer data-hx-trigger="load"
-data-hx-swap="outerHTML"
-data-hx-get="common.footer.partial.html">
-</footer>
+      data-hx-swap="outerHTML"
+      data-hx-get="common.footer.partial.html">
+    </footer>
   </body>
 </html>
