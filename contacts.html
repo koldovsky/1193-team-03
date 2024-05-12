@@ -5,17 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
-    />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header
@@ -27,29 +22,19 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.hero.partial.html"
+        data-hx-get="contacts.hero.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.shopping-categories.partial.html"
+        data-hx-get="contacts.contacts.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.projects.partial.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.partners.partial.html"
+        data-hx-get="contacts.faq.partial.html"
       ></section>
     </main>
-    <shopingcart
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="common.shoppingcart.partial.html"
-    ></shopingcart>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
