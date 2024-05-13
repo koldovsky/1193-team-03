@@ -1,0 +1,24 @@
+.footer {
+  background-color: #2b2b2b;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.footer__social-networks {
+  display: flex;
+  margin-top: 30px;
+}
+.footer__social-networks img {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+}
+.footer__navigation a {
+  list-style-type: none;
+}
