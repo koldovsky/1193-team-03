@@ -1,0 +1,142 @@
+.shopping-cart {
+    width: 470px;
+    height: 971.86px;
+    color: #858585;
+}
+
+.shopping-cart__title {
+    padding: 16px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+
+.shopping-cart__content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.shopping-cart__products {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product__image {
+    display: unset;
+}
+
+.product__details {
+    display: unset;
+    padding-left: 8px;
+    padding-right: 20px;
+}
+
+.product__quantity {
+    border-color: #C5CBD6;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.product__price {
+    margin-left: 24px;
+    font-size: 17px;
+}
+
+.product__delete {
+    display: unset;
+}
+
+.shopping-cart__section-title {
+    margin-bottom: 8px;
+}
+
+.shopping-cart__total {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.shopping-cart__total-label {
+    margin-top: 8px;
+}
+
+.shopping-cart__total-amount {
+    margin-top: 8px;
+}
+
+.order-form {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.order-form__title {
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+.order-form__input {
+    display: block;
+    margin-top: 12px;
+    width: 386px;
+    height: 40px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: #2B2B2B08;
+    border: none;
+}
+
+.order-form__input::placeholder {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.order-form__label {
+    font-size: 17px;
+    margin-top: 12px;
+}
+
+.order-form__required-marker {
+    color: #CC3833;
+}
+
+.order-form__input-group {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.order-form__textarea {
+    display: block;
+    margin-top: 12px;
+    width: 386px;
+    height: 114px;
+    padding-right: 20px;
+    border-radius: 20px;
+    background-color: #2B2B2B08;
+    border: none;
+}
+
+.order-form__textarea::placeholder {
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.order-form__button {
+    background-color: #02776e;
+    color: #FFFFFF; 
+    width: 97.42px;
+    height: 50.47px;
+    
+    border-radius: 25px;
+    border: none;
+    
+    font-size: 15.4px;
+    font-weight: 700;
+}
