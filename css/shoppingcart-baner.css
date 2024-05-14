@@ -1,0 +1,37 @@
+.shopping-cart-baner__content {
+    border-radius: 50%;
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 10%; 
+    right: 2%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-cart-baner__quantity {
+    position: fixed;
+    top: 10%; 
+    right: 2%;
+    z-index: 1001;
+    background-color: #02776E;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    
+}
+
+.shopping-cart-baner__number {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.shopping-cart-baner__img {
+    width: 100%;
+}
