@@ -1,0 +1,147 @@
+.about-us-vacancies {
+  padding: 90px 24px;
+}
+
+.about-us-vacancies__header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.about-us-vacancies__title-icon {
+  width: 20px;
+}
+
+.about-us-vacancies__title {
+  font-size: 12px;
+  margin: 0 10px;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+  color: var(--quaternary-text-dark-color);
+}
+
+.about-us-vacancies__intro {
+  margin-bottom: 50px;
+}
+
+.about-us-vacancies__intro-title {
+  margin-bottom: 60px;
+  font-family: Philosopher, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 41px;
+  color: var(--secondary-text-dark-color);
+}
+
+.about-us-vacancies__intro-text {
+  margin-bottom: 20px;
+  color: var(--primary-text-dark-color);
+  font-size: 17px;
+  line-height: 25.5px;
+}
+
+.about-us-vacancies__intro-link {
+  color: var(--primary-accent-color);
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  line-height: 12px;
+}
+
+.about-us-vacancies__item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.about-us-vacancy__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+.about-us-vacancy__title {
+  font-family: Philosopher, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--tertiary-text-dark-color);
+}
+
+.about-us-vacancy__type {
+  color: var(--quaternary-text-dark-color);
+  font-family: Philosopher, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.about-us-vacancy__responsibilities {
+  margin-bottom: 20px;
+}
+
+.about-us-vacancy__responsibilities,
+.about-us-vacancy__experience {
+  color: var(--primary-text-dark-color);
+  font-size: 17px;
+  line-height: 25.5px;
+}
+
+.about-us-vacancy__responsibilities-title,
+.about-us-vacancy__experience-title {
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .about-us-vacancies {
+    padding: 105px 30px;
+  }
+
+  .about-us-vacancies__intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .about-us-vacancies__intro-title {
+    flex: 1;
+    font-size: 41px;
+    line-height: 49.2px;
+    margin-bottom: unset;
+  }
+
+  .about-us-vacancies__intro-content {
+    flex: 1;
+  }
+
+  .about-us-vacancies__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  .about-us-vacancy__title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 990px) {
+  .about-us-vacancies {
+    padding: 120px 40px;
+  }
+
+  .about-us-vacancies__intro {
+    margin-bottom: 55px;
+  }
+
+  .about-us-vacancies__intro-title {
+    font-size: 48px;
+    line-height: 57.6px;
+  }
+
+  .about-us-vacancy__title {
+    font-size: 26px;
+  }
+}
