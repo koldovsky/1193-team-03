@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: var(--primary-button-color);
+  color: var(--primary-text-light-color);
+  border-radius: 25px;
+  border-color: 1px solid var(--primary-button-color);
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s ease;
+
+  &.button--primary {
+    &:hover {
+      background-color: var(--secondary-button-color);
+      color: var(--primary-text-light-color);
+    }
+  }
+
+  &.button--secondary {
+    &:hover {
+      background-color: var(--tertiary-button-color);
+      color: var(--tertiary-text-dark-color);
+    }
+  }
+}

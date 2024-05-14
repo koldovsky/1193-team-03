@@ -1,18 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    scroll-behavior: smooth;
-    font-family: "Albert Sans", sans-serif;
+  --primary-text-light-color: #fff;
+  --secondary-text-light-color: #f7f7f5;
+  --tertiary-text-light-color: #dcdcdc;
+
+  --primary-text-dark-color: #858585;
+  --secondary-text-dark-color: #3a3a3a;
+  --tertiary-text-dark-color: #2b2b2b;
+  --quaternary-text-dark-color: #847868;
+
+  --primary-accent-color: #05776e;
+  --secondary-accent-color: #2b2b2b;
+  /* --secondary-accent-color: #3b3b3b; */
+  /* --quaternary-accent-color: #fff; */
+
+  --primary-button-color: #05776e;
+  --secondary-button-color: #3b3b3b;
+  --tertiary-button-color: #fff;
+
+  scroll-behavior: smooth;
+  font-family: "Albert Sans", sans-serif;
 }
 
 img {
-    display: block;
-    /* width: 100%; */
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
