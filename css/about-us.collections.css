@@ -1,0 +1,62 @@
+.about-us-collection {
+  /* padding: 90px 24px; */
+  background: linear-gradient(rgba(59, 59, 59, 0.56), rgba(59, 59, 59, 0.56)),
+    url(../img/about-us/collections/joinery-works.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 30.63% 54.24%;
+  color: #fff;
+}
+
+.about-us-collections__content {
+  padding: 90px 24px;
+}
+
+.about-us-collections__title {
+  font-family: Philosopher, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  line-height: 41px;
+}
+
+.about-us-collections__description {
+  font-size: 17px;
+  line-height: 25.5px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .about-us-collections__content {
+    padding: 115px 32px;
+  }
+
+  .about-us-collections__title {
+    max-width: 57%;
+    font-size: 41px;
+    line-height: 49px;
+  }
+
+  .about-us-collections__description {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 990px) {
+  .about-us-collections__content {
+    padding: 140px 40px;
+  }
+
+  .about-us-collections__title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 57px;
+  }
+
+  .about-us-collections__description {
+    margin-bottom: 40px;
+    max-width: 40%;
+  }
+}
