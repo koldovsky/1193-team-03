@@ -1,0 +1,26 @@
+header.header {
+    padding: 30px 40px;
+    background-color: #f7f7f5;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  .nav-list {
+    display: flex;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #847868;
+    margin: 5px 7.5px;
+  }
+  
+  .social-item {
+    fill: #02776e;
+    text-decoration: none;
+  }
+  

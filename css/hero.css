@@ -1,0 +1,44 @@
+.hero {
+    background: url(/img/hero/hero.jpg) 53.75% 100% / cover no-repeat,
+      rgb(247, 247, 245);
+  }
+  
+  .hero .container {
+    padding-top: 105px;
+    padding-bottom: 150px;
+  }
+  
+  h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 97px;
+    line-height: 1;
+    font-weight: 400;
+    color: #2b2b2b;
+    margin-bottom: 50px;
+    max-width: calc(100% * 9 / 12);
+  }
+  
+  .welcome-message {
+    color: #858585;
+    line-height: 25.5px;
+    text-align: left;
+    font-size: 17px;
+    font-stretch: 100%;
+    max-width: calc(100% * 5 / 12);
+    margin-bottom: 40px;
+    font-family: "Albert Sans", sans-serif;
+  }
+  
+  .feature-list {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    max-width: calc(100% * 6 / 12);
+  }
+  
+  .feature-item {
+    width: 33%;
+    padding: 0 15px;
+    color: #858585;
+    font-size: 12px;
+  }
