@@ -1,6 +1,6 @@
 header.header {
     padding: 30px 20px;
-    background-color: #f7f7f5;
+    background-color: var(--secondary-text-light-color);
 }
   
 .header .container {
@@ -22,7 +22,7 @@ header.header {
     width: 100%;
     height: 2px;
     left: 0;
-    background-color: #000;
+    background-color: var(--tertiary-text-dark-color);
 }
 
 .burger-line:nth-child(1) {
