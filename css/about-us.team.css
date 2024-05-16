@@ -1,0 +1,306 @@
+.about-us-team__image {
+  background-image: url(../img/about-us/our-team/furniture-design-process.jpg);
+  background-size: cover;
+  aspect-ratio: 10/6;
+  overflow: hidden;
+}
+
+.about-us-team__article {
+  background-color: var(--primary-accent-color);
+  color: var(--primary-text-light-color);
+  padding: 90px 30px 105px;
+
+  .about-us-team__article-content {
+    .about-us-team__article-icon {
+      margin-bottom: 20px;
+      width: 50px;
+    }
+
+    .about-us-team__article-text {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 26px;
+      margin-bottom: 50px;
+    }
+
+    .about-us-team__author {
+      display: flex;
+      align-items: center;
+
+      .about-us-team__author-image {
+        width: 70px;
+        margin-right: 20px;
+      }
+
+      .about-us-team__author-details {
+        .about-us-team__author-name {
+          font-family: Philosopher, sans-serif;
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 24px;
+        }
+        .about-us-team__author-role {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 29.5px;
+          color: #f7f7f594;
+        }
+      }
+    }
+  }
+}
+
+.about-us-team__info {
+  background: linear-gradient(rgba(43, 43, 43, 0.98), rgba(43, 43, 43, 0.98)),
+    url(../img/about-us/fabric-background.png);
+  padding: 60px 24px;
+  color: var(--primary-text-light-color);
+
+  .about-us-team__info-header {
+    display: flex;
+    margin-bottom: 20px;
+
+    .about-us-team__info-icon {
+      width: 20px;
+    }
+
+    .about-us-team__info-title {
+      font-size: 12px;
+      margin: 0 10px;
+      letter-spacing: 1.2px;
+      line-height: 24px;
+      color: var(--secondary-text-light-color);
+    }
+  }
+
+  .about-us-team__info-sub-title {
+    margin-bottom: 25px;
+    font-family: Philosopher, sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
+  }
+
+  .about-us-team__info-description {
+    margin-bottom: 40px;
+    color: var(--tertiary-text-light-color);
+    font-size: 17px;
+    line-height: 25.5px;
+  }
+
+  .about-us-team__info-question {
+    margin-bottom: 35px;
+    font-family: Philosopher, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24.2px;
+  }
+
+  .about-us-team__slider {
+    display: flex;
+    align-items: center;
+    padding-top: 35px;
+    position: relative;
+
+    .about-us-team__slider-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: var(--tertiary-button-color);
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      opacity: 0.5;
+      transition: all 0.4s ease;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &.about-us-team__slider-arrow--left {
+        left: 0;
+
+        .about-us-team__slider-arrow-icon {
+          transform: rotate(180deg);
+        }
+      }
+
+      .about-us-team__slider-arrow-icon {
+        width: 12px;
+      }
+    }
+
+    .about-us-team__slider-members {
+      display: grid;
+      grid-template-columns: repeat(5, 100%);
+      gap: 20px;
+      overflow: hidden;
+      margin: 0 15px;
+
+      .about-us-team__slider-member {
+        .about-us-team__slider-member-image {
+          margin-bottom: 20px;
+        }
+
+        .about-us-team__slider-member-caption {
+          text-align: center;
+          font-size: 12px;
+          font-weight: 800;
+          letter-spacing: 1.2px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us-team__content {
+    display: flex;
+
+    .about-us-team__image {
+      width: 50%;
+      background-position: right;
+    }
+
+    .about-us-team__article {
+      width: 50%;
+      padding: 100px 58px 105px 58px;
+
+      .about-us-team__article-content {
+        max-width: 470px;
+        margin: auto;
+
+        .about-us-team__article-text {
+          font-size: 23px;
+          line-height: 30px;
+          margin-bottom: 40px;
+        }
+
+        .about-us-team__author {
+          .about-us-team__author-name {
+            font-size: 24px;
+            line-height: 26.4px;
+          }
+        }
+      }
+    }
+  }
+
+  .about-us-team__info {
+    padding: 60px 32px;
+
+    .about-us-team__info-header {
+      margin-bottom: 30px;
+    }
+
+    .about-us-team__info-sub-title {
+      margin-bottom: 35px;
+      font-size: 41px;
+      line-height: 25.5px;
+    }
+
+    .about-us-team__info-description {
+      margin-bottom: 60px;
+    }
+
+    .about-us-team__info-question {
+      font-size: 24px;
+      line-height: 26.4px;
+    }
+    .about-us-team__slider {
+      .about-us-team__slider-arrow {
+        width: 32px;
+        height: 32px;
+
+        .about-us-team__slider-arrow-icon {
+          width: 20px;
+        }
+      }
+
+      .about-us-team__slider-members {
+        grid-template-columns: repeat(5, 50%);
+      }
+    }
+  }
+}
+
+@media (min-width: 990px) {
+  .about-us-team__content {
+    height: 613px;
+
+    .about-us-team__article {
+      padding: 110px 30px 115px 30px;
+
+      .about-us-team__article-content {
+        .about-us-team__article-text {
+          font-size: 26px;
+          line-height: 34px;
+          margin-bottom: 40px;
+        }
+
+        .about-us-team__author {
+          .about-us-team__author-name {
+            font-size: 26px;
+            line-height: 28.6px;
+          }
+
+          .about-us-team__author-role {
+            font-size: 15px;
+            line-height: 31.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .about-us-team__info {
+    display: flex;
+    align-items: flex-start;
+    padding: 60px 40px;
+
+    .about-us-team__info-content {
+      min-width: 270px;
+
+      .about-us-team__info-sub-title {
+        font-size: 48px;
+        line-height: 57.5px;
+      }
+
+      .about-us-team__info-question {
+        font-size: 26px;
+        line-height: 28.6px;
+      }
+    }
+
+    .about-us-team__slider {
+      padding-top: unset;
+
+      .about-us-team__slider-members {
+        grid-template-columns: repeat(5, 22%);
+        gap: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us-team__info {
+    padding: 60px 30px;
+    gap: 20px;
+
+    .about-us-team__info-content {
+      min-width: 25%;
+    }
+
+    .about-us-team__slider {
+      .about-us-team__slider-members {
+        grid-template-columns: repeat(5, 23.5%);
+        gap: 30px;
+      }
+    }
+  }
+}

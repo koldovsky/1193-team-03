@@ -1,13 +1,13 @@
 .button {
   display: inline-block;
-  padding: 15px 25px;
+  padding: 15px 30px;
   background-color: var(--primary-button-color);
   color: var(--primary-text-light-color);
   border-radius: 25px;
-  border-color: 1px solid var(--primary-button-color);
   text-align: center;
   text-decoration: none;
-  transition: 0.4s ease;
+  transition: all 0.4s ease;
+  font-weight: 700;
 
   &.button--primary {
     &:hover {

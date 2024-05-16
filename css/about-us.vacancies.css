@@ -53,6 +53,11 @@
   border-bottom: 1px solid var(--divider-color);
 }
 
+/* .about-us-vacancies__container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);;
+} */
+
 .about-us-vacancy__header {
   display: flex;
   flex-direction: column;
