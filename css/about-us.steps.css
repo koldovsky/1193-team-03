@@ -1,0 +1,162 @@
+.about-us-steps {
+  padding: 90px 24px;
+  color: var(--primary-text-dark-color);
+  background-color: var(--secondary-text-light-color);
+  background-image: url(../img/about-us/steps/quality-background.png),
+    url(../img/about-us/steps/easy-steps-background.png);
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+}
+
+.about-us-steps__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.about-us-steps__header-icon {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.about-us-steps__header-title {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+  color: var(--quaternary-text-dark-color);
+}
+
+.about-us-steps__sub-title {
+  margin-bottom: 45px;
+  font-family: Philosopher, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 41px;
+  color: var(--secondary-text-dark-color);
+  text-align: center;
+}
+
+.about-us-steps__list {
+  margin-bottom: 65px;
+}
+
+.about-us-steps__item {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: unset;
+  }
+}
+
+.about-us-steps__item-title {
+  margin-bottom: 20px;
+  font-family: Philosopher, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: var(--secondary-accent-color);
+}
+
+.about-us-steps__item-title-number {
+  margin-right: 5px;
+  color: var(--quaternary-text-dark-color);
+}
+
+.about-us-steps__item-description {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+.about-us-steps__video-container {
+  margin-bottom: 50px;
+}
+
+.about-us-steps__video {
+  width: 100%;
+}
+
+.about-us-steps__feature {
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: unset;
+  }
+}
+
+.about-us-steps__feature-title {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  line-height: 12px;
+  color: var(--quaternary-text-dark-color);
+}
+
+.about-us-steps__feature-description {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+@media (min-width: 768px) {
+  .about-us-steps {
+    padding: 97.5px 32px 105px;
+  }
+
+  .about-us-steps__sub-title {
+    font-size: 41px;
+    line-height: 49.2px;
+  }
+
+  .about-us-steps__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .about-us-steps__item {
+    margin-bottom: unset;
+  }
+
+  .about-us-steps__item-title {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+
+  .about-us-steps__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .about-us-steps__feature {
+    margin-bottom: unset;
+
+    &:nth-child(2) {
+      padding-top: 40px;
+    }
+  }
+}
+
+@media (min-width: 990px) {
+  .about-us-steps {
+    padding: 105px 40px 120px;
+  }
+
+  .about-us-steps__sub-title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 57.6px;
+  }
+
+  .about-us-steps__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-us-steps__item-title {
+    font-size: 26px;
+    line-height: 28.6px;
+  }
+}
