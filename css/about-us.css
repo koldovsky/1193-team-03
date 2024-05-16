@@ -1,7 +1,8 @@
 @import "global.css";
-@import "controls.css";
+@import "about-us.mission.css";
 @import "about-us.steps.css";
 @import "about-us.team.css";
 @import "about-us.vacancies.css";
 @import "about-us.collections.css";
 @import "footer.css";
+@import "controls.css";

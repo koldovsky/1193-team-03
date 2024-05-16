@@ -59,3 +59,9 @@
     max-width: 40%;
   }
 }
+
+@media (min-width: 1225px) {
+  .about-us-collections__content {
+    padding: 140px 0;
+  }
+}

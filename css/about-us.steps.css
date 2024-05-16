@@ -160,3 +160,9 @@
     line-height: 28.6px;
   }
 }
+
+@media (min-width: 1225px) {
+  .about-us-steps {
+    padding: 105px 0 120px;
+  }
+}

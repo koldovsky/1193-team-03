@@ -1,5 +1,7 @@
 .about-us-vacancies {
   padding: 90px 24px;
+  background: url(../img/about-us/abstract-background.svg);
+  background-size: contain;
 }
 
 .about-us-vacancies__header {
@@ -148,5 +150,11 @@
 
   .about-us-vacancy__title {
     font-size: 26px;
+  }
+}
+
+@media (min-width: 1225px) {
+  .about-us-vacancies {
+    padding: 120px 0;
   }
 }
