@@ -30,10 +30,10 @@
   font-family: "Albert Sans", sans-serif;
 }
 
-/* img {
+img {
   display: block;
-  width: 100%;
-} */
+  /* width: 100%; */
+}
 
 ul {
   padding: 0;
