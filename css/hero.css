@@ -41,9 +41,21 @@ h1 {
   font-size: 12px;
 }
 
+.feature-list img  {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
 .feature-item + .feature-item {
   margin-top: 50px;
 }
+
+.hero button {
+  border: none;
+}
+
+
+
 
 @media screen and (min-width: 992px) {
   .hero .container {

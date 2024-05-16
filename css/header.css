@@ -9,6 +9,10 @@ header.header {
     flex-direction: row;
 }
 
+.header img {
+    width: 140px;
+}
+
 .burger {
     width: 24px;
     height: 16px;
