@@ -52,6 +52,7 @@ h1 {
 
 .hero button {
   border: none;
+  cursor: pointer;
 }
 
 
