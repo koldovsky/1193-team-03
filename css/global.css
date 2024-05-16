@@ -30,12 +30,19 @@
   font-family: "Albert Sans", sans-serif;
 }
 
-img {
+/* img {
   display: block;
   width: 100%;
+} */
+
+ul {
+  padding: 0;
+  list-style-type: none;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
 }
+
+
