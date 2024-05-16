@@ -1,0 +1,47 @@
+.about-us-hero {
+  background: linear-gradient(rgba(2, 119, 110, 0.95), rgba(2, 119, 110, 0.95)),
+    url(../img/about-us/fabric-background.png);
+  padding: 60px 0;
+  color: var(--primary-text-light-color);
+  text-align: center;
+}
+
+.about-us-hero__title {
+  margin-bottom: 25px;
+  font-family: Philosopher, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 41px;
+}
+
+.about-us-hero__breadcrumb {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.8px;
+}
+
+.about-us-hero__breadcrumb-link:hover {
+  text-decoration: underline;
+  transition: all 3ms ease;
+}
+
+@media (min-width: 768px) {
+  .about-us-hero__title {
+    font-size: 41px;
+    line-height: 49.2px;
+  }
+}
+
+@media (min-width: 990px) {
+  .about-us-hero__title {
+    margin-bottom: 25px;
+    font-family: Philosopher, sans-serif;
+    font-size: 48px;
+    line-height: 57.6px;
+  }
+
+  .about-us-hero__breadcrumb {
+    font-size: 15px;
+    line-height: 25.5px;
+  }
+}
