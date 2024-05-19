@@ -24,6 +24,8 @@
   --secondary-button-color: #3b3b3b;
   --tertiary-button-color: #fff;
 
+  --shopping-cart-quantity-background-color: #02776E;
+
   --divider-color: rgba(43, 43, 43, 0.2);
 
   scroll-behavior: smooth;
