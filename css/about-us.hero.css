@@ -20,9 +20,14 @@
   line-height: 23.8px;
 }
 
+.about-us-hero__breadcrumb-link {
+  text-decoration: none;
+  color: var(--primary-text-light-color);
+  transition: all 0.5s ease-out;
+}
+
 .about-us-hero__breadcrumb-link:hover {
-  text-decoration: underline;
-  transition: all 3ms ease;
+  border-bottom: 1px solid var(--primary-text-light-color);
 }
 
 @media (min-width: 768px) {
