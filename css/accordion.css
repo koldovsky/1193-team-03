@@ -1,0 +1,132 @@
+.accordion {
+  margin-bottom: 30px;
+}
+
+.accordion.accordion--large {
+  margin-bottom: unset;
+}
+
+.accordion__item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--divider-color);
+  position: relative;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__title {
+  font-family: Philosopher, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 24.2px;
+  color: var(--secondary-text-dark-color);
+}
+
+.accordion__title.accordion__title--large {
+ margin-bottom: 10px;
+} 
+
+.accordion__sub-title {
+  color: var(--quaternary-text-dark-color);
+  font-family: Philosopher, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+}
+
+.accordion__content {
+  font-size: 17px;
+  line-height: 25.5px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, margin 0.5s;
+}
+
+.accordion__content-section {
+  font-size: 17px;
+  line-height: 25.5px;
+}
+
+.accordion__content-section:first-child {
+  margin-bottom: 20px;
+}
+
+.accordion__content-section-title {
+  margin-bottom: 3px;
+  font-weight: 700;
+}
+
+.accordion__icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+
+.accordion__icon-horizontal-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-accent-color);
+}
+
+.accordion__icon-vertical-line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-accent-color);
+  position: absolute;
+  transform: rotate(90deg);
+  transition: transform 0.5s;
+  transform: rotate(90deg) scaleX(1);
+}
+
+.accordion__checkbox {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 65px;
+  z-index: 1;
+  opacity: 0;
+  touch-action: manipulation;
+}
+
+.accordion__checkbox.accordion__checkbox--large {
+  height: 85px;
+}
+
+.accordion__checkbox:checked ~ .accordion__content {
+  max-height: 150px;
+  margin-top: 20px;
+}
+
+.accordion__checkbox:checked ~ .accordion__content.accordion__content--large {
+  max-height: 500px;
+}
+
+.accordion__checkbox:checked
+  ~ .accordion__header
+  .accordion__icon-wrapper
+  .accordion__icon-vertical-line {
+  transform: rotate(90deg) scaleX(0);
+}
+
+
+@media (min-width: 768px) {
+  .accordion__title {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+}
+
+@media (min-width: 990px) {
+  .accordion__title {
+    font-size: 26px;
+    line-height: 28.6px;
+  }
+}

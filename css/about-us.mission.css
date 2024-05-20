@@ -45,29 +45,6 @@
   line-height: 25.5px;
 }
 
-.about-us-mission__details {
-  margin-bottom: 30px;
-}
-
-.about-us-mission__detail {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--divider-color);
-}
-
-.about-us-mission__detail-title {
-  margin-bottom: 20px;
-  font-family: Philosopher, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 24.2px;
-  color: var(--secondary-text-dark-color);
-}
-
-.about-us-mission__detail-description {
-  font-size: 17px;
-  line-height: 25.5px;
-}
-
 @media (min-width: 768px) {
   .about-us-mission__container {
     display: grid;
@@ -80,11 +57,6 @@
     font-size: 41px;
     line-height: 49.2px;
   }
-
-  .about-us-mission__detail-title {
-    font-size: 24px;
-    line-height: 26.4px;
-  }
 }
 
 @media (min-width: 990px) {
@@ -96,15 +68,14 @@
     font-size: 48px;
     line-height: 57.6px;
   }
-
-  .about-us-mission__detail-title {
-    font-size: 26px;
-    line-height: 28.6px;
-  }
 }
 
 @media (min-width: 1225px) {
   .about-us-mission__container {
     padding: 60px 0 120px;
+  }
+
+  .about-us-mission__header {
+    margin-top: 40px;
   }
 }

@@ -2,6 +2,7 @@
   padding: 90px 24px;
   background: url(../img/about-us/abstract-background.svg);
   background-size: contain;
+  color: var(--primary-text-dark-color);
 }
 
 .about-us-vacancies__header {
@@ -36,7 +37,6 @@
 
 .about-us-vacancies__intro-text {
   margin-bottom: 20px;
-  color: var(--primary-text-dark-color);
   font-size: 17px;
   line-height: 25.5px;
 }
@@ -48,57 +48,6 @@
   font-weight: 800;
   letter-spacing: 1.2px;
   line-height: 12px;
-}
-
-.about-us-vacancies__item {
-  padding: 20px 0;
-  border-bottom: 1px solid var(--divider-color);
-}
-
-/* .about-us-vacancies__container {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);;
-} */
-
-.about-us-vacancy__header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 44px;
-  margin-bottom: 20px;
-}
-
-.about-us-vacancy__title {
-  font-family: Philosopher, sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 22px;
-  color: var(--tertiary-text-dark-color);
-}
-
-.about-us-vacancy__type {
-  color: var(--quaternary-text-dark-color);
-  font-family: Philosopher, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-}
-
-.about-us-vacancy__responsibilities {
-  margin-bottom: 20px;
-}
-
-.about-us-vacancy__responsibilities,
-.about-us-vacancy__experience {
-  color: var(--primary-text-dark-color);
-  font-size: 17px;
-  line-height: 25.5px;
-}
-
-.about-us-vacancy__responsibilities-title,
-.about-us-vacancy__experience-title {
-  margin-bottom: 3px;
-  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -128,10 +77,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
-
-  .about-us-vacancy__title {
-    font-size: 24px;
-  }
 }
 
 @media (min-width: 990px) {
@@ -146,10 +91,6 @@
   .about-us-vacancies__intro-title {
     font-size: 48px;
     line-height: 57.6px;
-  }
-
-  .about-us-vacancy__title {
-    font-size: 26px;
   }
 }
 
