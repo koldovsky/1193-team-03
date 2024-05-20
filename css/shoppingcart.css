@@ -2,6 +2,7 @@
     width: 470px;
     height: 971.86px;
     color: #858585;
+
 }
 
 .shopping-cart__title {
@@ -25,9 +26,13 @@
 
 .product__image {
     display: unset;
+    width: 46px;
+    height: 46px;
 }
 
 .product__details {
+    width: 300px;
+    height: 55.5px;
     display: unset;
     padding-left: 8px;
     padding-right: 20px;
@@ -47,6 +52,8 @@
 
 .product__delete {
     display: unset;
+    width: 14px;
+    height: 18px; 
 }
 
 .shopping-cart__section-title {
@@ -139,4 +146,7 @@
     
     font-size: 15.4px;
     font-weight: 700;
+}
+.footer__navigation {
+    width: 340px;
 }
