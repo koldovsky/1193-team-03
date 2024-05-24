@@ -2,48 +2,163 @@
     display: flex;
 }
 
-.faq__header-icon {
+.faq__header-icon0 {
     width: 20px;
     margin-right: 10px;
-    padding-top: 90px ;
+    padding-top: 90px;
+    padding-bottom: 15px;
 }
 
-.faq__title {
+/* FAQ */
+.faq__title0 {
     color: var(--primary-text-dark-color);
     font-size: 12px;
     font-weight: 800;
     letter-spacing: 1.2px;
     line-height: 24px;
-    padding-top: 90px ;
-    
+    padding-top: 90px;
+    padding-bottom: 15px;
 }
-.faq__description-title {
+
+/*Need to Know More?*/
+.faq__description-title1 {
     color: var(--secondary-text-dark-color);
     font-size: 34px;
     font-family: philosopher, sans-serif;
     font-weight: 400;
     padding-left: 24px;
     padding-right: 24px;
+    line-height: 40.8px;
 }
 
-.faq__description-text {
+.faq__description-text1 {
     margin-top: 50px;
-    padding-left: 24px ;
+    padding-left: 24px;
     padding-right: 24px;
     color: var(--primary-text-dark-color);
+    font-size: 17px;
+    line-height: 25.5px;
 }
-.faq__question-title {
-    padding-top: 90px ;
+
+/*Do You Use Family-friendly Fabrics?*/
+.faq__question-title2 {
+    padding-top: 90px;
     padding-left: 34px;
     padding-right: 34px;
     font-family: philosopher, sans-serif;
     font-weight: 400;
-    font-size: 22x;
+    font-size: 22px;
+    line-height: 24.2px;
+
 }
-.faq__question-answer {
+
+.faq__question-answer2 {
     margin-top: 50px;
-    padding-left: 24px ;
-    padding-right: 24px;
+    padding-left: 34px;
+    padding-right: 34px;
     color: var(--primary-text-dark-color);
-    
+    font-size: 17px;
+    margin-top: 20px;
+    line-height: 25.5px;
+}
+
+/* When Can I Expect My Order? */
+.faq__question-title3 {
+    padding-top: 90px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-family: philosopher, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 24.2px;
+}
+
+.faq__description-text3 {
+    padding-left: 34px;
+    padding-right: 34px;
+    color: var(--primary-text-dark-color);
+    font-size: 17px;
+    line-height: 25.5px;
+}
+
+
+/* Can I Order an Individual Design of a Furniture Item? */
+.faq__question-title4 {
+    padding-top: 90px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-family: philosopher, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 24.2px;
+}
+
+.faq__description-text4 {
+    padding-left: 34px;
+    padding-right: 34px;
+    color: var(--primary-text-dark-color);
+    font-size: 17px;
+    line-height: 25.5px;
+
+}
+
+/* What Types of Wood do You Use? */
+.faq__question-title5 {
+    padding-top: 90px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-family: philosopher, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.faq__description-text5 {
+    padding-left: 34px;
+    padding-right: 34px;
+    color: var(--primary-text-dark-color);
+    font-size: 17px;
+    line-height: 25.5px;
+}
+
+/* Can Furniture be Dissembled to Move? */
+.faq__question-title6 {
+    padding-top: 90px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-family: philosopher, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.faq__description-text6 {
+    padding-left: 34px;
+    padding-right: 34px;
+    color: var(--primary-text-dark-color);
+    font-size: 17px;
+    line-height: 25.5px;
+}
+
+
+/* Do You Offer Any Guarantee? */
+.faq__question-title7 {
+    padding-top: 90px;
+    padding-left: 34px;
+    padding-right: 34px;
+    font-family: philosopher, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 24.2px;
+}
+
+.faq__description-text7 {
+    padding-left: 34px;
+    padding-right: 34px;
+    color: var(--primary-text-dark-color);
+    font-size: 17px;
+    line-height: 25.5px;
+    padding-bottom: 90px;
 }
