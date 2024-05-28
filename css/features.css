@@ -1,59 +1,35 @@
 .features {
-  height: 900px;
-  background-color: var(--ui-dark-shade-color);
-  display: block;
-}
-
-.features__image-container {
-  background-image: url(../img/about-us__photo.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 40%;
-  overflow: hidden;
-}
-
-.features.content-textblock {
-  text-align: left;
   display: flex;
-  flex-direction: column;
-  padding: 90px 30px;
+  flex-direction: row;
 }
 
-
-
-
-.features__text {
-  margin-top: 25px;
+.features-image {
+  width: 20%;
+  margin-right: 20px;
 }
 
-.features p {
-  color: var(--ui-light-shade-color);
-  font-family: var(--font-third-additional);
-  font-size: 16px;
-  font-weight: normal;
+.features-content {
+  flex: 1;
 }
 
-.features h2 {
-  color: var(--ui-light-shade-color);
-  font-family: var(--font-secondary);
-  font-size: 38px;
-  font-weight: normal;
+.features-text {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.features p{
-  font-size: 20px;
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-@media (min-width: 768px) {
-  .features{
-      height: 700px;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-  }
-  
-  }
-  .features h2 {
-      font-size: 3.3em;
-  }
+.features-list li {
+  margin-bottom: 10px;
+}
+
+.features-list li::before {
+  content: "\2022";
+  font-weight: bold;
+  margin-right: 10px;
 }
