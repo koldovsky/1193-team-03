@@ -1,14 +1,20 @@
-
-  div {
-    overflow: hidden; /* для того, щоб вмістити зображення */
+.features {
+  height: 900px;
+  background-color: background-color rgb(0, 128, 0);
+  display: block;
+}
+ 
+ 
+ .features div{
+    overflow: hidden; 
+ }
+  
+  .features img{
+    float: left; 
+    margin-right: 20px; 
   }
   
-  img {
-    float: left; /* зображення буде розташовуватися зліва */
-    margin-right: 20px; /* додається простір між зображенням та текстом */
-  }
-  
-  p {
-    float: right; /* текст буде розташовуватися справа */
-    margin-left: 20px; /* додається простір між текстом та зображенням */
+  .features p{
+    float: right; 
+    margin-left: 20px; 
   }
