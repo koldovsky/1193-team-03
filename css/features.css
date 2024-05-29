@@ -35,9 +35,6 @@
 
 .features  li {
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  
 }
 
-.features two-columns li:last-child {
-  border-bottom: none;
-}
