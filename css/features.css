@@ -22,19 +22,18 @@
   margin-bottom: 20px;
 }
 
-.features-two-columns {
-  display: flex;
+.features {
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.features two-columns ul {
+.features ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.features two-columns li {
+.features  li {
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
