@@ -22,18 +22,23 @@
   margin-bottom: 20px;
 }
 
-.features-list {
+.features-two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features two-columns ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.features-list li {
-  margin-bottom: 10px;
+.features two-columns li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
 
-.features-list li::before {
-  content: "\2022";
-  font-weight: bold;
-  margin-right: 10px;
+.features two-columns li:last-child {
+  border-bottom: none;
 }
