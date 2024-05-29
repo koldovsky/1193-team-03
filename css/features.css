@@ -12,8 +12,14 @@
   }
 
 
-.features-content {
-  flex: 1;
+.features h2 {
+  font-family: "Philosopher", sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--secondary-accent-color);
+  margin-bottom: 50px;
+  max-width: calc(100%* 9 / 12);
 }
 
 .features-text {
