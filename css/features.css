@@ -83,11 +83,10 @@
 .nav {
   border-bottom: 1px solid black;
 }
-.crumb a::after {
+.button__features {
   display: inline-block;
-  color: #000;
-  content: '>';
-  font-size: 80%;
-  font-weight: bold;
-  padding: 0 3px;
+  position: relative;
+  max-width: 100%;
+  word-wrap: break-word;
+  font-weight: 700;
 }
