@@ -1,6 +1,6 @@
 .features {
   display: flex;
-  flex-direction: row;
+  flex-direction: flex;
   background-color: #02776e;
   
 }
@@ -80,13 +80,15 @@
   padding: 10px;
   color: #FFFFFF; /* white text */
 }
-.nav {
-  border-bottom: 1px solid black;
-}
-.button__features {
-  display: inline-block;
-  position: relative;
-  max-width: 100%;
-  word-wrap: break-word;
-  font-weight: 700;
+
+
+.features_button {
+  background-color: #00100e;
+    color: #FFFFFF;
+    width: 97.42px;
+    height: 50.47px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15.4px;
+    font-weight: 700;
 }
