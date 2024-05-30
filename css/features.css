@@ -1,34 +1,33 @@
 .features {
   display: flex;
   flex-direction: row;
-  background-color: #02776e;; 
-  
+  background-color: #02776e;
 }
 
-  .features-image {
-    background-size: cover;
-    aspect-ratio: 10/6;
-    overflow: hidden;
-  }
-  .features__article {
-    background-color: var(--primary-accent-color);
-    color: var(--primary-text-light-color);
-    padding: 90px 30px 105px;
-  }
-  .features__article-text {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    margin-bottom: 50px;
-  }
+.features-image {
+  background-size: cover;
+  aspect-ratio: 10/6;
+  overflow: hidden;
+}
 
+.features__article {
+  background-color: var(--primary-accent-color);
+  color: var(--primary-text-light-color);
+  padding: 90px 30px 105px;
+}
 
-    .features__article-content {
-     
-        margin-bottom: 20px;
-        width: 50px;
-      }
-  
+.features__article-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 50px;
+}
+
+.features__article-content {
+  margin-bottom: 20px;
+  width: 50px;
+}
+
 .features h3 {
   font-family: "Philosopher", sans-serif;
   font-size: 50px;
@@ -36,7 +35,7 @@
   font-weight: 400;
   color: var(--secondary-accent-color);
   margin-bottom: 50px;
-  max-width: calc(100%* 9 / 12);
+  max-width: calc(100% * 9 / 12);
 }
 
 .features-text {
@@ -56,8 +55,6 @@
   margin: 0;
 }
 
-.features  li {
+.features li {
   padding: 10px;
-  
 }
-
