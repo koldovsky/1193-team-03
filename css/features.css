@@ -6,12 +6,29 @@
 }
 
   .features-image {
-    width: 30%; 
-    height: 150px; 
-    margin-left: 20px; 
+    background-size: cover;
+    aspect-ratio: 10/6;
+    overflow: hidden;
+  }
+  .features__article {
+    background-color: var(--primary-accent-color);
+    color: var(--primary-text-light-color);
+    padding: 90px 30px 105px;
+  }
+  .features__article-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 50px;
   }
 
 
+    .features__article-content {
+     
+        margin-bottom: 20px;
+        width: 50px;
+      }
+  
 .features h3 {
   font-family: "Philosopher", sans-serif;
   font-size: 50px;
