@@ -103,29 +103,43 @@
   color: rgb(23, 22, 22);
 }
 
+
+
 /* Медіа-запити для адаптивності */
 
 @media (max-width: 768px) {
   .container_features {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 
   .photo_features {
-    max-width: 100%;
-    height: 1000px;
+    width: 100%; 
+    height: auto; 
     overflow: hidden;
+    margin-bottom: 20px; 
   }
 
   .photo_features img {
-    width: 100%;
-    height: auto;
+    width: 100%; 
+    height: auto; 
+  }
+
+  .text_features {
+    width: 100%; 
+    
   }
 
   .features-list ul {
-    column-count: 1;
+    column-count: 1; 
   }
-}
+
+  .features-button {
+    width: 100%; 
+    padding: 15px; 
+  }
+
 
 @media (max-width: 480px) {
   .text_features {
