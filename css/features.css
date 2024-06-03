@@ -7,44 +7,44 @@
   box-sizing: border-box;
 }
 
+
 .container_features {
   display: flex;
-  background-color: #05776e;
-  max-width: 100%;
+  flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
   width: 100%;
+  max-width: 100%;
 }
 
+
 .photo_features {
-  flex: 1;
+  flex: 1 1 50%; /* Фотографія займає 50% ширини на всіх екранах */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: auto;
 }
+
 
 .photo_features img {
   max-width: 100%;
-  width: 100%;
-  
-}
-
-.photo_icon img {
-  width: 20px;   
   height: auto;
 }
 
-
-.text_features {
-  flex: 1;
-  padding: 100px;
-  color: white;
-  max-width: 50%;
+.photo_icon img {
+  width: 20px;
+  height: auto;
 }
 
-  .bloc-features {
+.text_features {
+  flex: 1 1 50%; /* Текст займає 50% ширини на всіх екранах */
+  padding: 100px; /* Ваш оригінальний padding */
+  color: white;
+  background-color: #05776e; /* Зелений фон для тексту */
+  box-sizing: border-box; /* Додати, щоб padding не збільшував ширину */
+}
+
+.bloc-features {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .text_features h2 {
@@ -52,7 +52,6 @@
   margin-bottom: 20px;
   margin: 0;
 }
-
 
 .text_features h3 {
   font-size: 48px;
@@ -103,10 +102,7 @@
   color: rgb(23, 22, 22);
 }
 
-
-
 /* Медіа-запити для адаптивності */
-
 @media (max-width: 768px) {
   .container_features {
     flex-direction: column;
@@ -115,41 +111,46 @@
   }
 
   .photo_features {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
     overflow: hidden;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
   }
 
   .photo_features img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
   }
 
   .text_features {
-    width: 100%; 
-    
+    width: 100%;
+    padding: 0 20px; /* Додати відступи для кращого вигляду */
+    text-align: justify; /* Розтягування тексту по ширині */
   }
 
   .features-list ul {
-    column-count: 1; 
+    column-count: 1;
   }
 
   .features-button {
-    width: 100%; 
-    padding: 15px; 
+    width: 100%;
+    padding: 15px;
   }
-
+}
 
 @media (max-width: 480px) {
   .text_features {
+    width: 100%;
     padding: 10px;
+    text-align: justify; /* Розтягування тексту по ширині */
   }
+
   .photo_features {
     max-width: 100%;
-    height: 1200px;
+    height: auto;
     overflow: hidden;
   }
+
   .features-button {
     padding: 10px;
     width: 100%;
@@ -168,5 +169,6 @@
   .text_features p, .features-list li {
     font-size: 16px;
     margin-bottom: 20px;
+    text-align: justify; /* Розтягування тексту по ширині */
   }
 }
