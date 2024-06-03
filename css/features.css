@@ -7,7 +7,6 @@
   box-sizing: border-box;
 }
 
-
 .container_features {
   display: flex;
   flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок */
@@ -15,14 +14,12 @@
   max-width: 100%;
 }
 
-
 .photo_features {
   flex: 1 1 50%; /* Фотографія займає 50% ширини на всіх екранах */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .photo_features img {
   max-width: 100%;
@@ -114,7 +111,7 @@
     width: 100%;
     height: auto;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .photo_features img {
@@ -124,7 +121,7 @@
 
   .text_features {
     width: 100%;
-    padding: 0 20px; /* Додати відступи для кращого вигляду */
+    padding: 20px; /* Додати відступи для кращого вигляду */
     text-align: justify; /* Розтягування тексту по ширині */
   }
 
@@ -141,8 +138,8 @@
 @media (max-width: 480px) {
   .text_features {
     width: 100%;
-    padding: 10px;
-    text-align: justify; /* Розтягування тексту по ширині */
+    padding: 20px;
+    text-align: justify; 
   }
 
   .photo_features {
@@ -169,6 +166,6 @@
   .text_features p, .features-list li {
     font-size: 16px;
     margin-bottom: 20px;
-    text-align: justify; /* Розтягування тексту по ширині */
+    text-align: justify;
   }
 }
