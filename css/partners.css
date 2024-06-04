@@ -3,7 +3,9 @@
 }
 
 .partners {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1414px;
+    height: 900px;
     margin: 0 auto;
     padding: 40px 20px;
     display: flex;
@@ -13,11 +15,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
-    padding: 0;
 }
 
 .partners_text {
     max-width: 600px;
+    width: 100%;
+    padding: 20px;
 }
 
 .partners_text h2 {
@@ -59,6 +62,9 @@
 
 .partners_image {
     position: relative;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
 }
 
 .partners_image img {
@@ -71,11 +77,13 @@
     .partners {
         flex-direction: column;
         align-items: center;
+        height: auto;
     }
 
-    .partners_text {
+    .partners_text, .partners_image {
         max-width: 100%;
         text-align: center;
+        padding: 10px;
     }
 
     .partners_icons {
@@ -86,4 +94,9 @@
         margin-top: 20px;
         width: 100%;
     }
+}
+
+/* Spacing between sections */
+section {
+    margin-bottom: 50px; /* Adjust this value as needed for spacing between sections */
 }
