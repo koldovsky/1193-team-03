@@ -1,99 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
 .partners {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f8f8f8;
 }
 
-.partners_furniture {
-    text-align: center;
-    margin-bottom: 40px;
+.partners_text {
+    max-width: 600px;
 }
 
 .partners_furniture h2 {
-    color: #777;
-    font-size: 1.2rem;
+    color: #bbb;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     margin: 0;
 }
 
 .partners_bigtext {
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin: 10px 0;
+    color: #333;
 }
 
 .partners_maintext {
     font-size: 1rem;
-    color: #555;
+    color: #777;
     line-height: 1.5;
-    margin: 0 auto;
-    max-width: 800px;
+    margin: 10px 0;
 }
 
 .partners_icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .partners_icons img {
-    max-width: 100px;
-    height: auto;
-}
-
-.partners_frnpicture {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-bottom: 40px;
-}
-
-.partners_frnpicture img {
     max-width: 100%;
     height: auto;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #eee;
 }
 
-.partners_frnpicture .image1 {
-    position: absolute;
-    left: -20%;
-    bottom: 10%;
-    max-width: 60%;
-    z-index: 1;
-}
-
-.partners_frnpicture .image2 {
+.partners_image {
     position: relative;
+}
+
+.partners_image img {
     max-width: 100%;
-    margin-left: auto;
+    height: auto;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .partners {
-        padding: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .partners_furniture h2 {
-        font-size: 1rem;
+    .partners_text {
+        max-width: 100%;
+        text-align: center;
     }
 
-    .partners_bigtext {
-        font-size: 1.5rem;
+    .partners_icons {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .partners_maintext {
-        font-size: 0.9rem;
-    }
-
-    .partners_icons img {
-        max-width: 80px;
-    }
-
-    .partners_frnpicture {
-        max-width: 80%;
-        left: -10%;
-        bottom: 5%;
+    .partners_image {
+        margin-top: 20px;
+        width: 100%;
     }
 }
