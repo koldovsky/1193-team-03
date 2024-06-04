@@ -21,11 +21,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
+}
+
+.partners_text, .partners_image {
+    height: 100%;
 }
 
 .partners_text {
     width: 520px;
-    height: 570px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -70,10 +74,10 @@
 
 .partners_image {
     width: 650px;
-    height: 570px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 70px; /* 70px space between text and image */
 }
 
 .partners_image img {
@@ -98,6 +102,8 @@
         max-width: 100%;
         text-align: center;
         padding: 10px;
+        width: calc(100% - 40px); /* Ensure content stays within padding on smaller screens */
+        height: auto;
     }
 
     .partners_icons {
@@ -106,6 +112,7 @@
 
     .partners_image {
         margin-top: 20px;
+        margin-left: 0; /* Remove margin on smaller screens */
         width: 100%;
     }
 }
