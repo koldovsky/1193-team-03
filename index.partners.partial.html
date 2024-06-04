@@ -1,37 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
-  <body>
-    <div class="partners">
-      <div class="partners_furniture">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+
+        .partners {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .partners_furniture {
+            grid-column: 1 / span 2;
+            text-align: left;
+        }
+
+        .partners_furniture h2 {
+            color: #777;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        .partners_bigtext {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .partners_maintext {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .partners_icons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        .partners_icons img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .partners_frnpicture {
+            grid-column: 1 / span 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .partners_frnpicture img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .partners {
+                grid-template-columns: 1fr;
+            }
+
+            .partners_icons {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="partners">
+    <div class="partners_furniture">
         <h2>Partners</h2>
         <p class="partners_bigtext">20+ Partners for Furniture Innovation</p>
         <p class="partners_maintext">
-          We cooperate with the best manufacturers to achieve the highest
-          quality of all products. Our partner network includes dozens of
-          premium brands around the world.
+            We cooperate with the best manufacturers to achieve the highest quality of all products.
+            Our partner network includes dozens of premium brands around the world.
         </p>
-      </div>
-      <div class="partners_icons">
-        <img src="img/partners/logo1.png" alt="Image 1" />
-        <img src="img/partners/logo2.png" alt="Image 2" />
-        <img src="img/partners/logo3.png" alt="Image 3" />
-
-        <img src="img/partners/logo4.png" alt="Image 4" />
-        <img src="img/partners/logo5.png" alt="Image 5" />
-        <img src="img/partners/logo6.png" alt="Image 6" />
-
-        <img src="img/partners/logo7.png" alt="Image 7" />
-        <img src="img/partners/logo8.webp" alt="Image 8" />
-        <img src="img/partners/logo9.png" alt="Image 9" />
-      </div>
-      <div class="partners_frnpicture">
-        <img src="img/partners/frnpicture.webp" alt="FRN Picture" />
-      </div>
     </div>
-  </body>
+    <div class="partners_icons">
+        <img src="img/partners/logo1.png" alt="Image 1">
+        <img src="img/partners/logo2.png" alt="Image 2">
+        <img src="img/partners/logo3.png" alt="Image 3">
+        <img src="img/partners/logo4.png" alt="Image 4">
+        <img src="img/partners/logo5.png" alt="Image 5">
+        <img src="img/partners/logo6.png" alt="Image 6">
+        <img src="img/partners/logo7.png" alt="Image 7">
+        <img src="img/partners/logo8.webp" alt="Image 8">
+        <img src="img/partners/logo9.png" alt="Image 9">
+    </div>
+    <div class="partners_frnpicture">
+        <img src="img/partners/frnpicture.webp" alt="FRN Picture">
+    </div>
+</div>
+</body>
 </html>
