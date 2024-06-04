@@ -3,6 +3,10 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
+    background-image: url('/img/partners/background.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
 }
 
 .partners {
@@ -11,15 +15,15 @@ body {
     padding: 40px 20px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    background-color: #f8f8f8;
+    align-items: center;
 }
 
 .partners_text {
     max-width: 600px;
+    padding-right: 20px;
 }
 
-.partners_furniture h2 {
+.partners_heading {
     color: #bbb;
     font-size: 1rem;
     letter-spacing: 2px;
@@ -58,11 +62,14 @@ body {
 
 .partners_image {
     position: relative;
+    max-width: 400px;
 }
 
 .partners_image img {
     max-width: 100%;
     height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* Responsive Design */
@@ -70,11 +77,12 @@ body {
     .partners {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .partners_text {
         max-width: 100%;
-        text-align: center;
+        padding-right: 0;
     }
 
     .partners_icons {
