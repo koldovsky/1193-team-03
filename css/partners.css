@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 .partners {
     width: 100%;
     height: 900px;
@@ -8,8 +9,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: 'Roboto', sans-serif;
     display: flex;
+    font-family: 'Roboto', sans-serif;
     justify-content: center;
     align-items: center;
 }
@@ -24,12 +25,9 @@
     padding: 20px;
 }
 
-.partners_text, .partners_image {
-    height: 100%;
-}
-
 .partners_text {
     width: 520px;
+    height: 570px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -74,6 +72,7 @@
 
 .partners_image {
     width: 650px;
+    height: 570px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,7 +102,6 @@
         text-align: center;
         padding: 10px;
         width: calc(100% - 40px); /* Ensure content stays within padding on smaller screens */
-        height: auto;
     }
 
     .partners_icons {
