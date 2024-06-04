@@ -19,11 +19,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .photo_features img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Обрізка зображення для збереження пропорцій */
 }
 
 .photo_icon img {
@@ -36,7 +38,11 @@
   padding: 100px; /* Ваш оригінальний padding */
   color: white;
   background-color: #05776e; /* Зелений фон для тексту */
-  box-sizing: border-box; /* Додати, щоб padding не збільшував ширину */
+  box-sizing: border-box; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .bloc-features {
@@ -100,27 +106,31 @@
 }
 
 /* Медіа-запити для адаптивності */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .container_features {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 900px) {
   .container_features {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
   }
 
-  .photo_features {
+  .photo_features, .text_features {
     width: 100%;
+    max-width: 100%;
     height: auto;
-    overflow: hidden;
-    margin-bottom: 0px;
   }
 
   .photo_features img {
     width: 100%;
     height: auto;
+    object-fit: cover; /* Обрізка зображення для збереження пропорцій */
   }
 
   .text_features {
-    width: 100%;
     padding: 20px; /* Додати відступи для кращого вигляду */
     text-align: justify; /* Розтягування тексту по ширині */
   }
@@ -139,13 +149,14 @@
   .text_features {
     width: 100%;
     padding: 20px;
-    text-align: justify; 
+    text-align: justify;
   }
 
   .photo_features {
     max-width: 100%;
     height: auto;
     overflow: hidden;
+    width: 100%;
   }
 
   .features-button {
