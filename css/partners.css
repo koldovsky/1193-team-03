@@ -1,17 +1,12 @@
 .partners {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
     max-width: 1200px;
-    width: 100%;
-    padding: 20px;
-    background-color: white;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .partners_furniture {
-    grid-column: 1 / span 2;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .partners_furniture h2 {
@@ -30,25 +25,29 @@
     font-size: 1rem;
     color: #555;
     line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .partners_icons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
 .partners_icons img {
-    width: 100%;
+    max-width: 100px;
     height: auto;
-    display: block;
 }
 
 .partners_frnpicture {
-    grid-column: 1 / span 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-bottom: 40px;
 }
 
 .partners_frnpicture img {
@@ -56,13 +55,45 @@
     height: auto;
 }
 
+.partners_frnpicture .image1 {
+    position: absolute;
+    left: -20%;
+    bottom: 10%;
+    max-width: 60%;
+    z-index: 1;
+}
+
+.partners_frnpicture .image2 {
+    position: relative;
+    max-width: 100%;
+    margin-left: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .partners {
-        grid-template-columns: 1fr;
+        padding: 10px;
     }
 
-    .partners_icons {
-        grid-template-columns: 1fr 1fr;
+    .partners_furniture h2 {
+        font-size: 1rem;
+    }
+
+    .partners_bigtext {
+        font-size: 1.5rem;
+    }
+
+    .partners_maintext {
+        font-size: 0.9rem;
+    }
+
+    .partners_icons img {
+        max-width: 80px;
+    }
+
+    .partners_frnpicture {
+        max-width: 80%;
+        left: -10%;
+        bottom: 5%;
     }
 }
