@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .partners {
     max-width: 1200px;
     margin: 0 auto;
@@ -5,14 +9,18 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-image: url("img/partners/background.svg");
+    background-image: url("../img/partners/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
 }
 
 .partners_text {
     max-width: 600px;
 }
 
-.partners_furniture h2 {
+.partners_text h2 {
     color: #bbb;
     font-size: 1rem;
     letter-spacing: 2px;
