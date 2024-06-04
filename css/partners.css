@@ -3,14 +3,12 @@
 }
 .partners {
     width: 100%;
-    max-width: 1414px;
     height: 900px;
-    margin: 0 auto;
     background-image: url("../img/partners/background.svg");
-    font-family: 'Roboto', sans-serif;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,14 +21,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: Add a background color to enhance readability */
-    padding: 0 20px; /* 20px padding on left and right */
 }
 
 .partners_text {
     width: 520px;
     height: 570px;
-    padding: 0 20px; /* Ensure padding within the content box */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -76,7 +71,6 @@
 .partners_image {
     width: 650px;
     height: 570px;
-    padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,6 +85,7 @@
 @media (max-width: 768px) {
     .partners {
         height: auto;
+        padding: 20px;
     }
 
     .partners_content {
@@ -113,9 +108,4 @@
         margin-top: 20px;
         width: 100%;
     }
-}
-
-/* Spacing between sections */
-section {
-    margin-bottom: 50px; /* Adjust this value as needed for spacing between sections */
 }
