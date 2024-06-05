@@ -1,8 +1,19 @@
 .banner {
-    background-image:url("../img/projects/backgroundimage.svg"); 
+    position: relative; /* Add this line */
+    background-image: url("../img/projects/backgrourproject.png"); 
     color: white;
     text-align: center;
     padding: 100px 0;
+}
+
+.banner::before { /* Changed from .banner to ::before */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 0, 0.5); /* Green color with 50% opacity */
 }
 
 .banner h1 {
