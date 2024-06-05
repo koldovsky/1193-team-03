@@ -1,94 +1,16 @@
-
-.gallery-container {
+.banner {
+    background-image:url("../img/projects/backgroundimage.svg"); 
+    color: white;
     text-align: center;
-    padding: 40px 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    max-width: 1200px;
-    margin: 40px auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-image: url('background.jpg'); /* Set your background image here */
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.banner h1 {
     margin: 0;
-    padding: 0;
-    color: #333;
+    font-size: 3em;
 }
-.gallery-header {
-    margin-bottom: 40px;
-}
-.gallery-header h1 {
-    font-size: 36px;
-    margin: 0;
-    color: #444;
-}
-.gallery-header p {
-    font-size: 18px;
-    color: #666;
+
+.banner p {
     margin: 10px 0 0;
-    max-width: 800px;
-    margin: 20px auto;
-    line-height: 1.6;
-}
-.nav-buttons {
-    margin: 30px 0;
-}
-.nav-buttons button {
-    margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: 2px solid #444;
-    background-color: transparent;
-    color: #444;
-    border-radius: 30px;
-    transition: all 0.3s;
-    outline: none;
-}
-.nav-buttons button:hover {
-    background-color: #444;
-    color: white;
-}
-.nav-buttons button.active {
-    background-color: #444;
-    color: white;
-}
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-.grid-item {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.grid-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-.grid-item img {
-    width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-}
-.grid-item p {
-    margin: 0;
-    padding: 15px;
-    background-color: rgba(255, 255, 255, 0.9);
-}
-.grid-item p:first-child {
-    font-size: 18px;
-    font-weight: bold;
-    color: #444;
-}
-.grid-item p:last-child {
-    font-size: 14px;
-    color: #888;
+    font-size: 1.2em;
 }
