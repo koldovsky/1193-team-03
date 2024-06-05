@@ -1,0 +1,32 @@
+.contact-section {
+    display: flex;
+  }
+  .title-icon {
+    width: 50px;
+  }
+  
+  .contact-map-container {
+    flex: 1; 
+    padding: 20px; 
+  }
+  
+  .contact-form-container {
+    flex: 1; 
+    padding: 20px; 
+  }
+  
+  .title1 {
+    margin-bottom: 10px; 
+  }
+.contact-form {
+    display: block;
+    overflow-wrap: break-word;
+    padding-block-end: 11px;
+    padding-block-start: 11px;
+    padding-bottom: 11px;
+    padding-inline-end: 22px;
+    padding-inline-start: 22px;
+    padding-right: 22px;
+    padding-top: 11px;
+    text-align: start;
+}
