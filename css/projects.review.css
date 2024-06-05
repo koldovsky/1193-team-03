@@ -1,0 +1,65 @@
+.projects_review {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1450px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  .projects_text {
+    flex: 1;
+    padding: 20px;
+    background-color: #00796b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .feedbacktext {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .homeownername {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .remarkreview {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .projects_text img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .projects_image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .projects_image img {
+    max-width: 100%;
+    height: auto;
+  }
+  @media (max-width: 768px) {
+    .projects_text {
+      padding: 10px;
+    }
+    .feedbacktext {
+      font-size: 1rem;
+    }
+    .homeownername {
+      font-size: 1rem;
+    }
+    .remarkreview {
+      font-size: 0.9rem;
+    }
+    .projects_text img {
+      width: 40px;
+      height: 40px;
+    }
+  }
