@@ -10,8 +10,8 @@
 
 .textreview {
   flex: 1;
-  padding-left: 50 px;
-  padding-right: 50  px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .imagereview {
@@ -26,6 +26,7 @@
   height: 100%; 
   object-fit: cover;
   padding: 0;
+  box-sizing: border-box;
 }
 
 blockquote {
