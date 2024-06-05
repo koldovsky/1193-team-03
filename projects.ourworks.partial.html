@@ -5,60 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture Gallery</title>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h1>Experience the Timeless Beauty of Furniture</h1>
-            <p>Our furniture is created by real craftsmen and famous designers with customers' needs in mind. All the items perfectly combine style, functionality, comfort, and the highest quality possible. Look through the latest design projects and see the difference!</p>
-        </div>
-        <div class="nav-buttons">
-            <button onclick="showCategory('living-room')">Living Room</button>
-            <button onclick="showCategory('office-furniture')">Office Furniture</button>
-            <button onclick="showCategory('bedroom-furniture')">Bedroom Furniture</button>
-            <button onclick="showCategory('kitchen-furnishings')">Kitchen Furnishings</button>
-        </div>
-        <div id="gallery" class="grid">
-            <!-- Grid items will be inserted here by JavaScript -->
-        </div>
-    </div>
+<div class="gallery-container">
+  <div class="gallery-header">
+      <h1>Experience the Timeless Beauty of Furniture</h1>
+      <p>Our furniture is created by real craftsmen and famous designers with customers' needs in mind. All the items perfectly combine style, functionality, comfort, and the highest quality possible. Look through the latest design projects and see the difference!</p>
+  </div>
+  <div class="nav-buttons">
+      <button class="active" onclick="showCategory('living-room')">Living Room</button>
+      <button onclick="showCategory('office-furniture')">Office Furniture</button>
+      <button onclick="showCategory('bedroom-furniture')">Bedroom Furniture</button>
+      <button onclick="showCategory('kitchen-furnishings')">Kitchen Furnishings</button>
+  </div>
+  <div id="gallery" class="grid">
+      <!-- Grid items will be inserted here by JavaScript -->
+  </div>
+</div>
 
-    <script>
-        const categories = {
-            'living-room': [
-                { src: 'greenlive.jpg', title: 'GreenLive', description: 'Production – 12 days | 10 items' },
-                { src: 'bali-style.jpg', title: 'Bali Style', description: 'Production – 30 days | 50 items' },
-                { src: 'minimal-design.jpg', title: 'Minimal Design', description: 'Production – 20 days | 10 items' },
-                { src: 'cozyhome.jpg', title: 'CozyHome', description: 'Production – 30 days | 8 items' },
-            ],
-            'office-furniture': [
-                // Add office furniture items here
-            ],
-            'bedroom-furniture': [
-                // Add bedroom furniture items here
-            ],
-            'kitchen-furnishings': [
-                // Add kitchen furnishings items here
-            ],
-        };
+<script>
+  const categories = {
+      'living-room': [
+          { src: 'greenlive.jpg', title: 'GreenLive', description: 'Production – 12 days | 10 items' },
+          { src: 'bali-style.jpg', title: 'Bali Style', description: 'Production – 30 days | 50 items' },
+          { src: 'minimal-design.jpg', title: 'Minimal Design', description: 'Production – 20 days | 10 items' },
+          { src: 'cozyhome.jpg', title: 'CozyHome', description: 'Production – 30 days | 8 items' },
+      ],
+      'office-furniture': [
+          // Add office furniture items here
+      ],
+      'bedroom-furniture': [
+          // Add bedroom furniture items here
+      ],
+      'kitchen-furnishings': [
+          // Add kitchen furnishings items here
+      ],
+  };
 
-        function showCategory(category) {
-            const gallery = document.getElementById('gallery');
-            gallery.innerHTML = '';
-            const items = categories[category];
-            items.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'grid-item';
-                div.innerHTML = `
-                    <img src="${item.src}" alt="${item.title}">
-                    <p>${item.title}</p>
-                    <p>${item.description}</p>
-                `;
-                gallery.appendChild(div);
-            });
-        }
+  function showCategory(category) {
+      const gallery = document.getElementById('gallery');
+      gallery.innerHTML = '';
+      const items = categories[category];
+      items.forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'grid-item';
+          div.innerHTML = `
+              <img src="${item.src}" alt="${item.title}">
+              <p>${item.title}</p>
+              <p>${item.description}</p>
+          `;
+          gallery.appendChild(div);
+      });
 
-        // Show default category on load
-        showCategory('living-room');
-    </script>
+      const buttons = document.querySelectorAll('.nav-buttons button');
+      buttons.forEach(button => {
+          button.classList.remove('active');
+      });
+      document.querySelector(`.nav-buttons button[onclick="showCategory('${category}')"]`).classList.add('active');
+  }
+
+  // Show default category on load
+  showCategory('living-room');
+</script>
 </body>
 </html>
