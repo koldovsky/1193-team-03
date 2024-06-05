@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.projects_review {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1450px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.projects_text {
+  flex-basis: 40%;
+  padding: 20px;
+}
+
+.feedbacktext {
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+}
+
+.homeownername {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.remarkreview {
+  font-size: 16px;
+  color: #666;
+}
+
+img[src="img/projects/iconofhomeowner.webp"] {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.projects_review img[src="img/projects/bedroomreview.webp"] {
+  width: 60%;
+  height: auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .projects_review {
+    flex-direction: column;
+  }
+  .projects_text {
+    flex-basis: 100%;
+  }
+  .projects_review img[src="img/projects/bedroomreview.webp"] {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,87 @@
+.gallery-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 1200px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-image: url('../img/projects/backgroundimage.svg'); /* Set your background image here */
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.gallery-header {
+    margin-bottom: 40px;
+}
+.gallery-header h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #444;
+}
+.gallery-header p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0 0;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+.nav-buttons {
+    margin: 30px 0;
+}
+.nav-buttons button {
+    margin: 0 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.nav-buttons button:hover {
+    background-color: #666;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.grid-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+.grid-item p {
+    margin: 0;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.grid-item p:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+.grid-item p:last-child {
+    font-size: 14px;
+    color: #888;
+}
