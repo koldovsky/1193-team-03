@@ -3,13 +3,14 @@
   flex-direction: row;
   align-items: center;
   padding: 20px;
-  background-color: #00695c;
+  background-color: #33756e;
   color: #fff;
 }
 
 .textreview {
   flex: 1;
   padding: 20px;
+  margin: 20px; 
 }
 
 .imagereview {
@@ -20,8 +21,8 @@
 }
 
 .imagereview img {
-  max-width: 100%;
-  height: auto;
+  width: 100%; 
+  height: 100%; 
   object-fit: cover;
 }
 
@@ -45,6 +46,7 @@ blockquote {
 
 .author span {
   display: block;
+  font-size: 1.2em;
 }
 
 .home-owner {
