@@ -1,65 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section class="projects">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Set your background image here */
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .header p {
+            font-size: 18px;
+            color: #555;
+        }
+        .nav-buttons {
+            margin: 20px 0;
+        }
+        .nav-buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+        .grid-item p {
+            margin: 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
     <div class="container">
-      <h2 class="section-title">Our Projects</h2>
-      <div class="projects-grid">
-        <div class="project">
-          <img src="img/projects/project1.png" alt="Project 1">
-          <div class="project-text">
-            <h3>Modern Bedroom</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <a href="#" class="btn">View Project</a>
-          </div>
+        <div class="header">
+            <h1>Experience the Timeless Beauty of Furniture</h1>
+            <p>Our furniture is created by real craftsmen and famous designers with customers' needs in mind. All the items perfectly combine style, functionality, comfort, and the highest quality possible. Look through the latest design projects and see the difference!</p>
         </div>
-        <div class="project">
-          <img src="img/projects/project2.png" alt="Project 2">
-          <div class="project-text">
-            <h3>Cozy Living Room</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <a href="#" class="btn">View Project</a>
-          </div>
+        <div class="nav-buttons">
+            <button onclick="showCategory('living-room')">Living Room</button>
+            <button onclick="showCategory('office-furniture')">Office Furniture</button>
+            <button onclick="showCategory('bedroom-furniture')">Bedroom Furniture</button>
+            <button onclick="showCategory('kitchen-furnishings')">Kitchen Furnishings</button>
         </div>
-        <div class="project">
-          <img src="img/projects/project3.png" alt="Project 3">
-          <div class="project-text">
-            <h3>Modern Kitchen</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <a href="#" class="btn">View Project</a>
-          </div>
+        <div id="gallery" class="grid">
+            <!-- Grid items will be inserted here by JavaScript -->
         </div>
-        <div class="project">
-          <img src="img/projects/project4.png" alt="Project 4">
-          <div class="project-text">
-            <h3>Bathroom Renovation</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <a href="#" class="btn">View Project</a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="img/projects/project5.png" alt="Project 5">
-          <div class="project-text">
-            <h3>Outdoor Space</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <a href="#" class="btn">View Project</a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="img/projects/project6.png" alt="Project 6">
-          <div class="project-text">
-            <h3>Home Office</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-            <a href="#" class="btn">View Project</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+
+    <script>
+        const categories = {
+            'living-room': [
+                { src: 'greenlive.jpg', title: 'GreenLive', description: 'Production – 12 days | 10 items' },
+                { src: 'bali-style.jpg', title: 'Bali Style', description: 'Production – 30 days | 50 items' },
+                { src: 'minimal-design.jpg', title: 'Minimal Design', description: 'Production – 20 days | 10 items' },
+                { src: 'cozyhome.jpg', title: 'CozyHome', description: 'Production – 30 days | 8 items' },
+            ],
+            'office-furniture': [
+                // Add office furniture items here
+            ],
+            'bedroom-furniture': [
+                // Add bedroom furniture items here
+            ],
+            'kitchen-furnishings': [
+                // Add kitchen furnishings items here
+            ],
+        };
+
+        function showCategory(category) {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+            const items = categories[category];
+            items.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'grid-item';
+                div.innerHTML = `
+                    <img src="${item.src}" alt="${item.title}">
+                    <p>${item.title}</p>
+                    <p>${item.description}</p>
+                `;
+                gallery.appendChild(div);
+            });
+        }
+
+        // Show default category on load
+        showCategory('living-room');
+    </script>
 </body>
 </html>
