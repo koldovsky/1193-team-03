@@ -1,70 +1,64 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+.reviewprojects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: #00695c;
+  color: #fff;
 }
 
-.projects_review {
+.textreview {
+  flex: 1;
+  padding: 20px;
+}
+
+.imagereview {
+  flex: 1;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 1450px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #f7f7f7;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.projects_text {
-  flex-basis: 40%;
-  padding: 20px;
-}
-
-.feedbacktext {
-  font-size: 18px;
-  font-style: italic;
-  color: #333;
-}
-
-.homeownername {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
-}
-
-.remarkreview {
-  font-size: 16px;
-  color: #666;
-}
-
-img[src="img/projects/iconofhomeowner.webp"] {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-}
-
-.projects_review img[src="img/projects/bedroomreview.webp"] {
-  width: 60%;
+.imagereview img {
+  max-width: 100%;
   height: auto;
-  margin: 20px;
-  border-radius: 10px;
+  object-fit: cover;
 }
 
-/* Make it responsive */
+blockquote {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.author span {
+  display: block;
+}
+
+.home-owner {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
 @media (max-width: 768px) {
-  .projects_review {
-    flex-direction: column;
+  .container {
+      flex-direction: column;
   }
-  .projects_text {
-    flex-basis: 100%;
-  }
-  .projects_review img[src="img/projects/bedroomreview.webp"] {
-    width: 100%;
-    height: auto;
-    margin: 10px;
+
+  .text-section,
+  .image-section {
+      padding: 10px;
   }
 }
