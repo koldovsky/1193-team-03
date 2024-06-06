@@ -6,10 +6,11 @@
 }
 
 .about-us-hero__title {
+    margin-bottom: 25px;
     font-family: Philosopher, sans-serif;
     font-size: 34px;
-    font-weight: 500;
-    line-height: 40px;
+    font-weight: 400;
+    line-height: 42px;
 }
 
 .about-us-hero__breadcrumb {
