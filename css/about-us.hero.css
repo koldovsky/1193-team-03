@@ -24,3 +24,23 @@
     color: var(--primary-text-light-color);
 }
 
+@media (min-width: 768px) {
+    .about-us-hero__title {
+        font-size: 41px;
+        line-height: 50px;
+    }
+}
+
+@media (min-width: 990px) {
+    .about-us-hero__title {
+        margin-bottom: 25px;
+        font-family: Philosopher, sans-serif;
+        font-size: 48px;
+        line-height: 57.5px;
+    }
+
+    .about-us-hero__breadcrumb {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
