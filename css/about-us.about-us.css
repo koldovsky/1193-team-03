@@ -1,0 +1,57 @@
+/* .about-us-about-us__content {
+    
+} */
+
+.about-us-about-us__header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.about-us-about-us__title-icon {
+    width: 15px;
+}
+
+.about-us-about-us__title {
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.about-us-about-us__subtitle{
+    font-family: Philosopher, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.about-us-about-us__description {
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.about-us-about-us__divide-line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(34, 34, 34);
+}
+
+.about-us-about-us__details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-us-about-us__details-icon {
+    width: 40px;
+}
+
+.about-us-about-us__details-title {
+    font-family: Philosopher, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.about-us-about-us__details-description {
+    font-size: 15px;
+    line-height: 24px;
+}
+
