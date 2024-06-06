@@ -5,17 +5,17 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 1600px; /* Встановлюємо максимальну ширину для великих екранів */
+  max-width: 1600px; 
   height: 200px;
-  background-color: #05776e32;
+  background-color: #05776e;
   border: 2px solid #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 0px;
-  box-sizing: border-box; /* Враховуємо padding у розмір контейнера */
+  box-sizing: border-box; 
 }
 
 #clock {
-  font-size: 4rem; /* Збільшуємо розмір шрифту */
+  font-size: 4rem; 
   color: #fff;
 }
 
