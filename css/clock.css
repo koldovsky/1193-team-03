@@ -1,42 +1,41 @@
-  
+
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1600px; /* Встановлюємо максимальну ширину для великих екранів */
+  height: 200px;
+  background-color: #05776e32;
+  border: 2px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  box-sizing: border-box; /* Враховуємо padding у розмір контейнера */
+}
+
+#clock {
+  font-size: 4rem; /* Збільшуємо розмір шрифту */
+  color: #fff;
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 768px) {
   .clock-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 800px; /* Встановлюємо максимальну ширину для великих екранів */
-    height: 300px;
-    background-color: #41a15e;
-    border: 2px solid #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-    box-sizing: border-box; /* Враховуємо padding у розмір контейнера */
+    height: 200px;
   }
-  
+
   #clock {
-    font-size: 4rem; /* Збільшуємо розмір шрифту */
-    color: #fff;
+    font-size: 3rem;
   }
-  
-  /* Медіа-запити для адаптивності */
-  @media (max-width: 768px) {
-    .clock-container {
-      height: 200px;
-    }
-  
-    #clock {
-      font-size: 3rem;
-    }
+}
+
+@media (max-width: 480px) {
+  .clock-container {
+    height: 150px;
   }
-  
-  @media (max-width: 480px) {
-    .clock-container {
-      height: 150px;
-    }
-  
-    #clock {
-      font-size: 2rem;
-    }
+
+  #clock {
+    font-size: 2rem;
   }
-  
+}
