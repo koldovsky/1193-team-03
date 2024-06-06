@@ -2,6 +2,10 @@
     margin-bottom: 30px;
 }
 
+.accordion.accordion--large {
+    margin-bottom: unset;
+}
+
 .accordion__item {
     padding: 20px 0;
     border-bottom: 1px solid var(--divider-color);
@@ -21,6 +25,10 @@
     color: var(--secondary-text-dark-color);
 }
 
+.accordion__title.accordion__title--large {
+    margin-bottom: 10px;
+}
+
 .accordion__text {
     font-size: 17px;
     line-height: 25px;
@@ -28,15 +36,6 @@
     overflow: hidden;
     transition: max-height 0.5s, margin 0.5s;
     color: var(--primary-text-dark-color);
-}
-
-.accordion__icon-cover {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    width: 15px;
-    height: 15px;
 }
 
 .accordion__checkbox {
