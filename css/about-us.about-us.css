@@ -2,6 +2,10 @@
     margin-bottom: 90px;
 }
 
+.about-us-about-us__cover {
+    padding: 60px 60px 60px;
+}
+
 .about-us-about-us__header {
     display: flex;
     margin-bottom: 20px;
