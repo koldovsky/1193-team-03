@@ -1,21 +1,25 @@
 .about-us-hero {
     background: linear-gradient(rgb(2, 119, 110), rgb(2, 119, 110)), url(../img/about-us/fabric-background.png);
     text-align: center;
+    padding: 60px 0;
     color: var(--primary-text-light-color);
 }
 
 .about-us-hero__title {
-    font-family: sans-serif;
-    font-size: 30px;
+    font-family: Philosopher, sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 40px;
 }
 
 .about-us-hero__breadcrumb {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px
 }
 
 .about-us-hero__breadcrumb-link {
     text-decoration: none;
     color: var(--primary-text-light-color);
-    
 }
 
