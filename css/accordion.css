@@ -4,7 +4,7 @@
 
 .accordion__item {
     padding: 20px 0;
-    border-bottom: 1px var(--divider-color);
+    border-bottom: 1px solid var(--divider-color);
     position: relative;
 }
 
@@ -26,7 +26,8 @@
     line-height: 25px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s, margin 1s;
+    transition: max-height 0.5s, margin 0.5s;
+    color: var(--primary-text-dark-color);
 }
 
 .accordion__icon-cover {
@@ -36,22 +37,6 @@
     position: relative;
     width: 15px;
     height: 15px;
-}
-
-.accordion__icon-vertical-line {
-    width: 100%;
-    height: 2px;
-    background-color: var(--secondary-accent-color);
-    position: absolute;
-    transform: rotate(90deg);
-    transition: transform 1s;
-    transform: rotate(90deg) scaleX(1)
-}
-
-.accordion__icon-horizontal-line {
-    width: 100%;
-    height: 2px;
-    background-color: var(--secondary-accent-color);
 }
 
 .accordion__checkbox {
@@ -76,10 +61,6 @@
 
 .accordion__checkbox:checked ~ .accordion__text.accordion__text--large {
     max-height: 500px;
-}
-
-.accordion__checkbox:checked ~ .accordion__header.accordion__icon-cover.accordion__icon-vertical-line {
-    transform: rotate(90deg) scaleX(0);
 }
 
 @media (min-width: 768px) {
