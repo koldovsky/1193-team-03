@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "productName": "Upi Bedside Table",
+        "photo": "img/goods/upi_bedside_table/upi_bedside_table.jpg",
+        "price": 110.00,
+        "inStock": true,
+        "width": 10.0,
+        "length": 8.0,
+        "description": "This ultimate wooden bedside table with one shelf will fit perfectly into your bedroom. The polished surface is easy to wipe off.",
+        "materials": ["Walnut wood"]
+    },
+    {
+        "id": 2,
+        "productName": "Angela Sofa",
+        "photo": "img/goods/angela_sofa/angela_sofa.jpg",
+        "price": 330.00,
+        "inStock": true,
+        "width": 35.0,
+        "length": 73.0,
+        "description": "This wide-backed white sofa will welcome you after or during your hard day and help you relax. It will fit into any interior and is very easy to clean.",
+        "materials": ["Faux suede", "wood"]
+    },
+    {
+        "id": 3,
+        "productName": "George Sofa (3MA)",
+        "photo": "img/goods/george_sofa/george_sofa.jpg",
+        "price": 310.00,
+        "discountedPrice": 100.00,
+        "inStock": true,
+        "width": 38.0,
+        "length": 63.0,
+        "description": "This minimalistic sofa is a perfect fit for a home office or living room. It is a versatile sofa in a deep emerald colour that looks good in any interior design.",
+        "materials": ["textile", "steel"]
+    },
+    {
+        "id": 4,
+        "productName": "Fusion Dresser (FAL)",
+        "photo": "img/goods/fusion_dresser/fusion_dresser.jpg",
+        "price": 320.00,
+        "inStock": true,
+        "width": 25.0,
+        "length": 32.0,
+        "description": "Stylish wooden dresser in whit colour. Functional and minimalistic, it fits perfectly into any interior.",
+        "materials": ["Beech wood"]
+    },
+    {
+        "id": 5,
+        "productName": "Glory Cabinet (CAD)",
+        "photo": "img/goods/glory_cabinet/glory_cabinet.jpg",
+        "price": 250.00,
+        "discountedPrice": 140.00,
+        "inStock": true,
+        "width": 20.0,
+        "length": 30.0,
+        "description": "This wooden kitchen cabinet is a classic and timeless piece that provides ample storage and a beautiful aesthetic touch to any kitchen. It is designed with one drawer and two shelves.",
+        "materials": ["Solid wood"]
+    },
+    {
+        "id": 6,
+        "productName": "Donna Bedside Table (AAM)",
+        "photo": "img/goods/donna_bedside_table/donna_bedside_table.jpg",
+        "price": 150.00,
+        "discountedPrice": 140.00,
+        "inStock": true,
+        "width": 15.0,
+        "length": 20.0,
+        "description": "This white bedside table is the perfect accent to any bedroom. This table is a great way to keep your bedroom organised and clutter-free, featuring one shelf for keeping books, magazines, and other items. This white table will blend in with any decor with its simple design.",
+        "materials": ["Walnut wood"]
+    }
+]
+
