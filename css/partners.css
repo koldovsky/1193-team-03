@@ -46,8 +46,6 @@
 }
 .partners_text h2 {
   font-size: 14px;
-  margin-bottom: 20px;
-  margin: 0;
   color:rgb(132,120,104);
 }
 
@@ -73,7 +71,7 @@
 }
 
 .partners_icons img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     padding: 10px;
     background: #fff;
@@ -81,8 +79,8 @@
 }
 
 .partners_image {
-    width: 650px;
-    height: 570px;
+    width: 670px;
+    height: 590px;
     display: flex;
     align-items: center;
     justify-content: center;
