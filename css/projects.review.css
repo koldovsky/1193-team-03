@@ -13,48 +13,50 @@
   background-size: cover;
   aspect-ratio: 10/6;
   overflow: hidden;
+  order: 2; /* Ensure the image is on the right side */
 }
 
 .projects-team__article {
   background-color: var(--primary-accent-color);
   color: var(--primary-text-light-color);
   padding: 90px 30px 105px;
+  order: 1; /* Ensure the article is on the left side */
+}
 
-  .projects-team__article-content {
-    .projects-team__article-icon {
-      margin-bottom: 20px;
-      width: 50px;
+.projects-team__article-content {
+  .projects-team__article-icon {
+    margin-bottom: 20px;
+    width: 50px;
+  }
+
+  .projects-team__article-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .projects-team__author {
+    display: flex;
+    align-items: center;
+
+    .projects-team__author-image {
+      width: 70px;
+      margin-right: 20px;
     }
 
-    .projects-team__article-text {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 26px;
-      margin-bottom: 50px;
-    }
-
-    .projects-team__author {
-      display: flex;
-      align-items: center;
-
-      .projects-team__author-image {
-        width: 70px;
-        margin-right: 20px;
+    .projects-team__author-details {
+      .projects-team__author-name {
+        font-family: Philosopher, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
       }
-
-      .projects-team__author-details {
-        .projects-team__author-name {
-          font-family: Philosopher, sans-serif;
-          font-size: 22px;
-          font-weight: 400;
-          line-height: 24px;
-        }
-        .projects-team__author-role {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 29.5px;
-          color: #f7f7f594;
-        }
+      .projects-team__author-role {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 29.5px;
+        color: #f7f7f594;
       }
     }
   }
