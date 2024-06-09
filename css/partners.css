@@ -31,7 +31,10 @@
     align-items: center;
     padding: 20px;
 }
-
+partners_smalltextblock{
+    display: flex;
+  align-items: center;
+}
 .partners_text {
     width: 520px;
     height: 570px;
@@ -47,13 +50,14 @@
 .partners_text h2 {
   font-size: 14px;
   color:rgb(132,120,104);
+  margin: 0;
 }
 
 .partners_bigtext {
     font-size: 2.5rem;
-    font-weight: bold;
     margin: 10px 0;
     color: #333;
+    
 }
 
 .partners_maintext {
