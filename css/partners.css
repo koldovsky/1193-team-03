@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
     box-sizing: border-box;
 }
@@ -10,9 +13,13 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    font-family: 'Roboto', sans-serif;
     justify-content: center;
     align-items: center;
+    font-family: Philosopher, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  line-height: 41px;
 }
 
 .partners_content {
@@ -24,28 +31,33 @@
     align-items: center;
     padding: 20px;
 }
-
+partners_smalltextblock{
+    display: flex;
+  align-items: center;
+}
 .partners_text {
     width: 520px;
     height: 570px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
-
+.partners_icon {
+    width: 20px;
+  height: auto;
+}
 .partners_text h2 {
-    color: #bbb;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin: 0;
+  font-size: 14px;
+  color:rgb(132,120,104);
+  margin: 0;
 }
 
 .partners_bigtext {
     font-size: 2.5rem;
-    font-weight: bold;
     margin: 10px 0;
     color: #333;
+    
 }
 
 .partners_maintext {
@@ -63,7 +75,7 @@
 }
 
 .partners_icons img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     padding: 10px;
     background: #fff;
@@ -71,8 +83,8 @@
 }
 
 .partners_image {
-    width: 650px;
-    height: 570px;
+    width: 670px;
+    height: 590px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,10 +118,11 @@
 
     .partners_icons {
         grid-template-columns: repeat(2, 1fr);
+        margin:auto
     }
 
     .partners_image {
-        margin-top: 20px;
+        margin-top: 50px;
         margin-left: 0; /* Remove margin on smaller screens */
         width: 100%;
     }

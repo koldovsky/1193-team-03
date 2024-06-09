@@ -1,6 +1,6 @@
 .reviewprojects {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Ensure row direction */
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -8,105 +8,118 @@
   color: #ffffff;
 }
 
-.textreview {
-  flex: 1;
-  padding-left: 50px;
-  padding-right: 50px;
+.projects-team__image {
+  background-image: url(../img/projects/bedroomreview.webp);
+  background-size: cover;
+  aspect-ratio: 10/6;
+  overflow: hidden;
+  order: 2; /* Ensure the image is on the right side */
 }
 
-.imagereview {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagereview img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-blockquote {
-  font-size: 1.7em;
-  line-height: 1.5;
-  margin: 0 0 20px 0;
-}
-
-.author {
-  display: flex;
-  align-items: center;
-}
-
-.author img {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.author span {
-  display: block;
-  font-size: 1.2em;
-}
-
-.home-owner {
-  font-size: 0.9em;
-  color: #ccc;
-}
-
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-  }
-
-  .text-section,
-  .image-section {
-      padding: 10px;
-  }
-}
-
-.about-us-team__article {
+.projects-team__article {
   background-color: var(--primary-accent-color);
   color: var(--primary-text-light-color);
   padding: 90px 30px 105px;
+  order: 1; /* Ensure the article is on the left side */
+}
 
-  .about-us-team__article-content {
-    .about-us-team__article-icon {
-      margin-bottom: 20px;
-      width: 50px;
+.projects-team__article-content {
+  .projects-team__article-icon {
+    margin-bottom: 20px;
+    width: 50px;
+  }
+
+  .projects-team__article-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .projects-team__author {
+    display: flex;
+    align-items: center;
+
+    .projects-team__author-image {
+      width: 70px;
+      margin-right: 20px;
     }
 
-    .about-us-team__article-text {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 26px;
-      margin-bottom: 50px;
-    }
-
-    .about-us-team__author {
-      display: flex;
-      align-items: center;
-
-      .about-us-team__author-image {
-        width: 70px;
-        margin-right: 20px;
+    .projects-team__author-details {
+      .projects-team__author-name {
+        font-family: Philosopher, sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
       }
+      .projects-team__author-role {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 29.5px;
+        color: #f7f7f594;
+      }
+    }
+  }
+}
 
-      .about-us-team__author-details {
-        .about-us-team__author-name {
-          font-family: Philosopher, sans-serif;
-          font-size: 22px;
-          font-weight: 400;
-          line-height: 24px;
+@media (min-width: 990px) {
+  .projects-team__content {
+    height: 613px;
+
+    .projects-team__article {
+      padding: 110px 30px 115px 30px;
+
+      .projects-team__article-content {
+        .projects-team__article-text {
+          font-size: 26px;
+          line-height: 34px;
+          margin-bottom: 40px;
         }
-        .about-us-team__author-role {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 29.5px;
-          color: #f7f7f594;
+
+        .projects-team__author {
+          .projects-team__author-name {
+            font-size: 26px;
+            line-height: 28.6px;
+          }
+
+          .projects-team__author-role {
+            font-size: 15px;
+            line-height: 31.5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .projects-team__content {
+    display: flex;
+
+    .projects-team__image {
+      width: 50%;
+      background-position: right;
+    }
+
+    .projects-team__article {
+      width: 50%;
+      padding: 100px 58px 105px 58px;
+
+      .projects-team__article-content {
+        max-width: 470px;
+        margin: auto;
+
+        .projects-team__article-text {
+          font-size: 23px;
+          line-height: 30px;
+          margin-bottom: 40px;
+        }
+
+        .projects-team__author {
+          .projects-team__author-name {
+            font-size: 24px;
+            line-height: 26.4px;
+          }
         }
       }
     }
