@@ -1,6 +1,6 @@
 .reviewprojects {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse; /* Change flex direction to row-reverse */
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -63,21 +63,23 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-  .container {
+  .reviewprojects {
       flex-direction: column;
   }
 
-  .text-section,
-  .image-section {
+  .textreview,
+  .imagereview {
       padding: 10px;
   }
 }
+
 .projects-team__image {
   background-image: url(../img/projects/bedroomreview.webp);
   background-size: cover;
   aspect-ratio: 10/6;
   overflow: hidden;
 }
+
 .projects-team__article {
   background-color: var(--primary-accent-color);
   color: var(--primary-text-light-color);
@@ -122,6 +124,7 @@ blockquote {
     }
   }
 }
+
 @media (min-width: 990px) {
   .projects-team__content {
     height: 613px;
@@ -151,13 +154,14 @@ blockquote {
     }
   }
 }
+
 @media (min-width: 768px) {
   .projects-team__content {
     display: flex;
 
     .projects-team__image {
       width: 50%;
-      background-position: left;
+      background-position: right;
     }
 
     .projects-team__article {
