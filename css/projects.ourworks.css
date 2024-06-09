@@ -4,6 +4,11 @@
     padding: 60px 0;
     color: var(--primary-text-light-color);
     text-align: center;
+    margin-bottom: 25px;
+    font-family: Philosopher, sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 41px;
   }
   
   .projects__title {
