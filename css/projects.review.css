@@ -73,7 +73,7 @@ blockquote {
   }
 }
 .projects-team__image {
-  background-image: url(img/projects/bedroomreview.webp);
+  background-image: url(../img/projects/bedroomreview.webp);
   background-size: cover;
   aspect-ratio: 10/6;
   overflow: hidden;

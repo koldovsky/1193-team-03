@@ -1,58 +1,46 @@
-.projects-hero {
-    background: linear-gradient(rgba(2, 119, 110, 0.95), rgba(2, 119, 110, 0.95)),
-      url(../img/about-us/fabric-background.png);
-    padding: 60px 0;
-    color: var(--primary-text-light-color);
-    text-align: center;
-    margin-bottom: 25px;
-    font-family: Philosopher, sans-serif;
-    font-size: 34px;
-    font-weight: 400;
-    line-height: 41px;
-  }
-  
-  .projects__title {
-    margin-bottom: 25px;
-    font-family: Philosopher, sans-serif;
-    font-size: 34px;
-    font-weight: 400;
-    line-height: 41px;
-  }
-  
-  .projects__breadcrumb {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 23.8px;
-  }
-  
-  .projects__breadcrumb-link {
-    text-decoration: none;
-    color: var(--primary-text-light-color);
-    transition: all 0.5s ease-out;
-  }
-  
-  .projects__breadcrumb-link:hover {
-    border-bottom: 1px solid var(--primary-text-light-color);
-  }
-  
-  @media (min-width: 768px) {
-    .projects__title {
+.projects-us-hero {
+  background: linear-gradient(rgba(2, 119, 110, 0.95), rgba(2, 119, 110, 0.95)), url(../img/about-us/fabric-background.png);
+  text-align: center;
+  padding: 60px 0;
+  color: var(--primary-text-light-color);
+}
+
+.projects-hero__title {
+  margin-bottom: 25px;
+  font-family: Philosopher, sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.projects-hero__breadcrumb {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px
+}
+
+.projects-hero__breadcrumb-link {
+  text-decoration: none;
+  color: var(--primary-text-light-color);
+}
+
+@media (min-width: 768px) {
+  .projects-hero__title {
       font-size: 41px;
-      line-height: 49.2px;
-    }
+      line-height: 50px;
   }
-  
-  @media (min-width: 990px) {
-    .projects__title {
+}
+
+@media (min-width: 990px) {
+  .projects-hero__title {
       margin-bottom: 25px;
       font-family: Philosopher, sans-serif;
       font-size: 48px;
-      line-height: 57.6px;
-    }
-  
-    .projects__breadcrumb {
-      font-size: 15px;
-      line-height: 25.5px;
-    }
+      line-height: 57.5px;
   }
 
+  .projects-hero__breadcrumb {
+      font-size: 15px;
+      line-height: 25px;
+  }
+}
