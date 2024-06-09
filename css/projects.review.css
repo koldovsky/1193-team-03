@@ -152,7 +152,7 @@ blockquote {
 
     .projects-team__image {
       width: 50%;
-      background-position: right;
+      background-position: left;
     }
 
     .projects-team__article {
