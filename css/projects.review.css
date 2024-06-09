@@ -12,6 +12,11 @@
   flex: 1;
   padding-left: 50px;
   padding-right: 50px;
+  font-family: Philosopher, sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+  margin-bottom: 45px;
+  line-height: 41px;
 }
 
 .imagereview {
