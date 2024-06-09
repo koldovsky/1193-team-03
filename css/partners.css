@@ -118,6 +118,7 @@ partners_smalltextblock{
 
     .partners_icons {
         grid-template-columns: repeat(2, 1fr);
+        margin:auto
     }
 
     .partners_image {
