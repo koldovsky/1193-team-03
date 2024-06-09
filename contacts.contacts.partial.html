@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <section class="contact-section">
-    <div class="contact-map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6051.310745338143!2d-73.7830133621745!3d40.681561756163596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c266cdcb0f5359%3A0x2945a7a1713ce5ca!2zMTE5LTE0IDE2NXRoIFN0LCBKYW1haWNhLCBOWSAxMTQzNCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1715076915228!5m2!1sru!2sua"
-        width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="contact-form-container">
-      <div class="contact-info">
-        <img src="img/about-us/title-icon.svg" alt="title-icon" class="title-icon"/>
-        <h2 class="title1">CONTACTS</h2>
-      </div>
-      <p>Order Furniture Now!</p>
-      <p>
-        If you want to order our furniture, make a custom request, or have any
-        questions or inquiries, please contact us now.
-      </p>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name*" required class="name"/>
-        <input type="text" placeholder="Phone number*" required class="number"/>
-        <input type="text" placeholder="Email*" required class="Email"/>
-        <textarea placeholder="Your Message*" id="" cols="30" rows="10" required class="Message"></textarea>
-        <button type="submit">Request a Quote</button>
-      </form>
-    </div>
-  </section>
-  </section>
+    <section class="contact-section">
+        <div class="contact-map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6051.310745338143!2d-73.7830133621745!3d40.681561756163596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c266cdcb0f5359%3A0x2945a7a1713ce5ca!2zMTE5LTE0IDE2NXRoIFN0LCBKYW1haWNhLCBOWSAxMTQzNCwg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1715076915228!5m2!1sru!2sua"
+                style="border: 0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-form-container">
+            <div class="contact-info">
+                <img src="img/about-us/title-icon.svg" alt="title-icon" class="title-icon"/>
+                <h2 class="title1">CONTACTS</h2>
+            </div>
+            <h3 class="title2">Order Furniture Now!</h3>
+            <p>If you want to order our furniture, make a custom request, or have any questions or inquiries, please contact us now.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name*" required class="name"/>
+                <input type="text" placeholder="Phone number*" required class="number"/>
+                <input type="email" placeholder="Email*" required class="email"/>
+                <textarea placeholder="Your Message*" cols="30" rows="5" required class="message"></textarea>
+                <button type="submit" class="submit-button">Request a Quote</button>
+            </form>
+        </div>
+    </section>
 </body>
-
 </html>
