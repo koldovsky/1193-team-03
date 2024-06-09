@@ -67,42 +67,47 @@ blockquote {
       padding: 10px;
   }
 }
-
-.about-us-team__article {
+.projects-team__image {
+  background-image: url(../img/about-us/our-team/furniture-design-process.jpg);
+  background-size: cover;
+  aspect-ratio: 10/6;
+  overflow: hidden;
+}
+.projects-team__article {
   background-color: var(--primary-accent-color);
   color: var(--primary-text-light-color);
   padding: 90px 30px 105px;
 
-  .about-us-team__article-content {
-    .about-us-team__article-icon {
+  .projects-team__article-content {
+    .projects-team__article-icon {
       margin-bottom: 20px;
       width: 50px;
     }
 
-    .about-us-team__article-text {
+    .projects-team__article-text {
       font-size: 20px;
       font-weight: 500;
       line-height: 26px;
       margin-bottom: 50px;
     }
 
-    .about-us-team__author {
+    .projects-team__author {
       display: flex;
       align-items: center;
 
-      .about-us-team__author-image {
+      .projects-team__author-image {
         width: 70px;
         margin-right: 20px;
       }
 
-      .about-us-team__author-details {
-        .about-us-team__author-name {
+      .projects-team__author-details {
+        .projects-team__author-name {
           font-family: Philosopher, sans-serif;
           font-size: 22px;
           font-weight: 400;
           line-height: 24px;
         }
-        .about-us-team__author-role {
+        .projects-team__author-role {
           font-size: 14px;
           font-weight: 500;
           line-height: 29.5px;
