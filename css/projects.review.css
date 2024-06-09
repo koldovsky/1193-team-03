@@ -117,3 +117,65 @@ blockquote {
     }
   }
 }
+@media (min-width: 990px) {
+  .projects-team__content {
+    height: 613px;
+
+    .projects-team__article {
+      padding: 110px 30px 115px 30px;
+
+      .projects-team__article-content {
+        .projects-team__article-text {
+          font-size: 26px;
+          line-height: 34px;
+          margin-bottom: 40px;
+        }
+
+        .projects-team__author {
+          .projects-team__author-name {
+            font-size: 26px;
+            line-height: 28.6px;
+          }
+
+          .projects-team__author-role {
+            font-size: 15px;
+            line-height: 31.5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .projects-team__content {
+    display: flex;
+
+    .projects-team__image {
+      width: 50%;
+      background-position: right;
+    }
+
+    .projects-team__article {
+      width: 50%;
+      padding: 100px 58px 105px 58px;
+
+      .projects-team__article-content {
+        max-width: 470px;
+        margin: auto;
+
+        .projects-team__article-text {
+          font-size: 23px;
+          line-height: 30px;
+          margin-bottom: 40px;
+        }
+
+        .projects-team__author {
+          .projects-team__author-name {
+            font-size: 24px;
+            line-height: 26.4px;
+          }
+        }
+      }
+    }
+  }
+}
