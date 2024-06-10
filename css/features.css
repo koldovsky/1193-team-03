@@ -62,6 +62,7 @@
   font-size: 18px;
   margin-bottom: 30px;
   color: rgb(186, 210, 207);
+  text-align: justify;
 }
 .features-list ul {
   column-count: 2;
