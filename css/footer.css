@@ -147,6 +147,7 @@
 .footer_description {
   display: flex;
   max-width: 570px;
+  font-weight: 400;
 }
 
 .footer__item {
@@ -163,7 +164,23 @@
   margin: 0;
   padding: 0;
 }
+.footer__subscribe-heading {
+  font-weight: 400;
+  margin-left: -74px;
+}
 
+.footer__item {
+  color: var(--tertiary-text-light-color);
+}
+
+.footer a {
+  color: var(--tertiary-text-light-color);
+}
+
+.footer__subscribe-text {
+  width: auto;
+  color: var(--tertiary-text-light-color);
+}
 
 @media (min-width: 768px) {
   .footer__content {
