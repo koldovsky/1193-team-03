@@ -2,25 +2,84 @@
   background-color: var(--secondary-accent-color);
   color: var(--primary-text-light-color);
 }
-.footer__social-networks {
-  display: flex;
-  margin-top: 20px;
-  max-width: 200px;
-}
-.footer__company-text {
-  display: flex;
-}
-.footer ul {
-  list-style-type: none;
-}
+
 .footer__content {
-  width: 1080px;
   display: flex;
-  padding-top: 80px;
-  padding-bottom: 15px;
+  flex-direction: column;
+  padding: 80px 24px 15px;
   justify-content: space-between;
   align-items: center;
 }
+
+.footer__company-text {
+  display: flex;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer__social-networks {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.footer__social-network-image {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__company-description {
+  text-align: center;
+  font-size: 19px;
+}
+
+.footer__block_navigator {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 24px 80px;
+  text-align: center;
+}
+
+.footer__subscribe-form {
+  margin-bottom: 80px;
+}
+
+.footer__subscribe-input {
+  background-color: var(--secondary-button-color);
+  color: var(--primary-text-light-color);
+  height: 40px;
+  border-radius: 25px;
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0px;
+  border: 0;
+}
+.footer__subscribe-button {
+  background-color: var(--primary-button-color);
+  color: var(--primary-text-light-color);
+  width: 100%;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  font-size: 15.4px;
+  font-weight: 700;
+}
+
+.footer__navigation-container {
+  margin-bottom: 60px;
+}
+
+.footer__created {
+  background-color: #222;
+  text-align: center;
+  padding: 40px 20px;
+}
+
 .footer a {
   color: var(--tertiary-text-light-color);
   text-decoration: none;
@@ -29,51 +88,12 @@
 .footer__logo-image {
   width: 163px;
 }
-.footer__company-name {
-  display: block;
-}
-
-.footer__subscribe-form {
-  width: 340px;
-}
-
-.footer__social-networks img {
-  width: 30px;
-  height: 30px;
-  margin: 0 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__subscribe-input {
-  background-color: var(--secondary-button-color);
-  color: var(--primary-text-light-color);
-  height: 40px;
-  border-radius: 25px;
-  width: 340px;
-  padding: 15px;
-  margin: 20px 0px;
-  border: 0;
-}
-.footer__subscribe-button {
-  background-color: var(--primary-button-color);
-  color: var(--primary-text-light-color);
-  width: 340px;
-  height: 40px;
-  border-radius: 25px;
-  border: none;
-  font-size: 15.4px;
-  font-weight: 700;
-}
 
 .footer__link {
   width: 20px;
   height: 24px;
 }
 
-.footer__block {
-  padding: 20px;
-}
 .footer__heading {
   font-size: 24px;
   margin-bottom: 20px;
@@ -83,6 +103,7 @@
   list-style: none;
   padding: 0;
 }
+
 .footer__item {
   margin-bottom: 10px;
 }
@@ -97,38 +118,18 @@
   height: 20px;
   margin-right: 10px;
 }
+
 .footer__text,
 .footer__link {
   font-size: 16px;
   text-decoration: none;
 }
+
 .footer__link:hover {
   text-decoration: underline;
 }
 
-.footer_block_suport {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0px;
-  grid-column-gap: 40px;
-  padding-top: 80px;
-  margin-left: -245px;
-  width: 700px;
-}
-
-.footer__block_navigator {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-left: 120px;
-  padding-bottom: 80px;
-}
-.footer__social-networks {
-  grid-template-columns: repeat(2, 1fr);
-  margin-left: 100px;
-}
-
 .footer__subscribe-heading {
-  padding-top: 80px;
   font-weight: 600;
 }
 
@@ -141,11 +142,6 @@
   color: var(--primary-accent-color);
   max-width: 665px;
   padding-right: 10px;
-}
-
-.footer__logo {
-  padding-left: 120px;
-  max-width: 163px;
 }
 
 .footer_description {
@@ -166,4 +162,35 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+
+@media (min-width: 768px) {
+  .footer__content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px
+  }
+
+  .footer__block_navigator {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: start;
+  }
+
+  .footer__company-description {
+    text-align: start;
+  }
+}
+
+@media (min-width: 990px) {
+  .footer_description {
+   max-width: 65%;
+  }
+}
+
+@media (min-width: 1200px) {
+
 }
