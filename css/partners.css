@@ -128,11 +128,11 @@
         max-width: 100%;
         text-align: center;
         padding: 10px;
-        width: calc(100% - 40px); /* Ensure content stays within padding on smaller screens */
+        width: calc(100% - 40px); 
     }
 
     .partners_text {
-        order: 1; /* Ensure the text section comes first */
+        order: 1; 
     }
 
     .partners_icons {
@@ -141,9 +141,6 @@
     }
 
     .partners_image {
-        order: 3; /* Ensure the image section comes after the text and grid */
-        margin-top: 20px; /* Reduce the top margin for better spacing */
-        margin-left: 0; /* Remove margin on smaller screens */
-        width: 100%;
+        display: none; 
     }
 }
