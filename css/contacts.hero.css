@@ -1,0 +1,24 @@
+
+.section1 {
+    background: linear-gradient(rgba(2, 119, 110, 0.95), rgba(2, 119, 110, 0.95)),
+        url(../img/about-us/fabric-background.png);
+    padding: 60px 0;
+    color:#fff;
+    text-align: center;
+}
+
+.main-header {
+    font-size: 48px;
+    font-family: Philosopher, sans-serif;
+    font-weight: 400;
+    line-height: 57.6px;
+    padding-top: 65px;
+}
+
+.main-header-description {
+    font-size: 15px;
+    font-family: Philosopher, sans-serif;
+    font-weight: 500;
+    line-height: 25.5px;
+    padding-bottom: 40px;
+}

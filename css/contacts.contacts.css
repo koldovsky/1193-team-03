@@ -1,5 +1,6 @@
 
 
+
 .contact-section {
   display: flex;
   height: 800px;
@@ -27,24 +28,29 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  flex-direction: column;
 }
 
-.contact-info .title-icon {
-  margin-right: 10px;
-  width: 30px;
+.title-icon11 {
+  width: 50px;
+padding-bottom: 30px;
 }
 
-.title1 {
-  font-size: 32px;
-  font-family: 'Philosopher', sans-serif;
-  margin: 0;
-}
-
-.title2 {
-  font-size: 24px;
+.title11 {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 1.2px;
   font-family: 'Albert Sans', sans-serif;
-  margin: 10px 0 20px;
+  font-weight: 800;
+}
+
+.title22 {
+  font-size: 48px;
+  font-family: Philosopher, sans-serif;
   text-align: center;
+  font-weight: 400;
+  padding-bottom: 35px;
+
 }
 
 p {
@@ -52,8 +58,9 @@ p {
   font-size: 16px;
   font-family: 'Albert Sans', sans-serif;
   line-height: 25.6px;
-  margin: 10px 0;
+  padding-bottom: 25px;
   width: 80%;
+  color: rgba(255, 255, 255, 0.81);
 }
 
 .contact-form {
@@ -64,17 +71,17 @@ p {
   max-width: 500px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   font-family: 'Albert Sans', sans-serif;
   margin-bottom: 15px;
   padding: 15px;
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 30px;
   background: #3b3b3b;
   color: #fff;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
 }
 
 .contact-form textarea {
@@ -86,12 +93,12 @@ p {
   background: #05776e;
   color: #fff;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   font-family: 'Albert Sans', sans-serif;
   transition: background 0.3s;
   width: 100%;
+  border-radius: 30px;
 }
 
 .contact-form .submit-button:hover {
@@ -102,33 +109,40 @@ p {
 
 @media (max-width: 2560px) {
   .contact-section {
-      flex-direction: row;
-      height: 800px;
+    flex-direction: row;
+    height: 800px;
   }
 }
 
 @media (max-width: 1440px) {
   .contact-section {
-      flex-direction: row;
-      height: 800px;
+    flex-direction: row;
+    height: 800px;
   }
 }
 
 @media (max-width: 1024px) {
   .contact-section {
-      flex-direction: row;
-      height: 800px;
+    flex-direction: row;
+    height: 800px;
   }
 }
 
 @media (max-width: 768px) {
   .contact-section {
-      flex-direction: column;
-      height: auto;
+    flex-direction: column;
+    height: auto;
   }
-  
-  .contact-map-container, .contact-form-container {
-      height: 800px;
-      width: 100%;
+
+  .contact-map-container,
+  .contact-form-container {
+    height: 800px;
+    width: 100%;
   }
 }
+
+
+
+
+
+
