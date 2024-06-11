@@ -15,6 +15,7 @@
 .accordion__header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .accordion__title {
@@ -42,23 +43,23 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
     width: 15px;
     height: 15px;
-    margin-left: 80%;
 }
 
 .accordion__icon-horizontal-line {
     width: 100%;
     height: 2.5px;
-    background-color: var(--secondary-text-dark-color);
+    background-color: var(--primary-text-dark-color);
     border-radius: 2px;
 }
 
 .accordion__icon-vertical-line {
     width: 100%;
     height: 2.5px;
-    background-color: var(--secondary-text-dark-color);
+    background-color: var(--primary-text-dark-color);
     position: absolute;
     border-radius: 2px;
     transform: rotate(90deg);
