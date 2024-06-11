@@ -38,6 +38,34 @@
     color: var(--primary-text-dark-color);
 }
 
+.accordion__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-left: 80%;
+}
+
+.accordion__icon-horizontal-line {
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--secondary-text-dark-color);
+    border-radius: 2px;
+}
+
+.accordion__icon-vertical-line {
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--secondary-text-dark-color);
+    position: absolute;
+    border-radius: 2px;
+    transform: rotate(90deg);
+    transition: transform 0.5s;
+    transform: rotate(90deg) scaleX(1);
+}
+
 .accordion__checkbox {
     position: absolute;
     top: 0;
@@ -61,6 +89,27 @@
 .accordion__checkbox:checked ~ .accordion__text.accordion__text--large {
     max-height: 500px;
 }
+
+.accordion__checkbox:hover
+    ~ .accordion__header
+    .accordion__icon
+    .accordion__icon-horizontal-line {
+        background-color: var(--secondary-accent-color);
+    }
+
+.accordion__checkbox:hover
+    ~ .accordion__header
+    .accordion__icon
+    .accordion__icon-vertical-line {
+        background-color: var(--secondary-accent-color);
+    }
+
+.accordion__checkbox:checked
+    ~ .accordion__header
+    .accordion__icon
+    .accordion__icon-vertical-line {
+        transform: rotate(90deg) scaleX(0);
+    }
 
 @media (min-width: 768px) {
     .accordion__title {
