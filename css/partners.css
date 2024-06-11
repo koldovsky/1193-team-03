@@ -32,26 +32,21 @@
     padding: 20px;
     flex-wrap: wrap; /* Ensure the content wraps on smaller screens */
 }
-.partners_smalltextblock{
+
+.partners_smalltextblock {
     display: flex;
     align-items: center;
-}
-.partners_text {
-    width: 520px;
-    height: 570px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .partners_icon {
     width: 20px;
     height: auto;
+    margin-right: 10px; /* Space between the icon and the heading */
 }
 
 .partners_text h2 {
     font-size: 14px;
-    color:rgb(132,120,104);
+    color: rgb(132, 120, 104);
     margin: 0;
 }
 
@@ -110,6 +105,18 @@
         height: auto;
     }
 
+    .partners_smalltextblock {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .partners_icon {
+        margin-right: 10px; /* Maintain space between icon and heading */
+    }
+
     .partners_text, .partners_image {
         max-width: 100%;
         text-align: center;
@@ -117,12 +124,17 @@
         width: calc(100% - 40px); /* Ensure content stays within padding on smaller screens */
     }
 
+    .partners_text {
+        order: 1; /* Ensure the text section comes first */
+    }
+
     .partners_icons {
         grid-template-columns: repeat(2, 1fr);
-        margin:auto;
+        margin: auto;
     }
 
     .partners_image {
+        order: 2; /* Ensure the image section comes after the text */
         margin-top: 20px; /* Reduce the top margin for better spacing */
         margin-left: 0; /* Remove margin on smaller screens */
         width: 100%;
