@@ -91,13 +91,13 @@
   font-family: 'Albert Sans', sans-serif;
   font-size: 13px;
 }
-.footer {
+.project_footer {
   text-align: center;
   margin: 20px 0; 
   font-size: 32px;
 }
 
-.footer button {
+.project_footer button {
   background-color: transparent;
   color: #02776e;
   padding: 0;
