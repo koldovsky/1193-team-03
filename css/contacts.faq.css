@@ -33,7 +33,7 @@
 .faq__description {
     text-align: left;
     margin-bottom: 40px;
-    
+    color: #121212;
 }
 
 .faq__description-title {
@@ -61,6 +61,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 50px;
     justify-items: left;
+    color: #121212;
 }
 
 .faq__question {
@@ -70,7 +71,7 @@
     width: 100%;
     max-width: 400px;
     text-align: left;
-
+    color: #121212;
 }
 
 .faq__question-title {
@@ -79,6 +80,7 @@
     font-weight: 400;
     margin-bottom: 10px;
     text-align: left;
+    color: #121212;
 }
 
 .faq__question-answer {

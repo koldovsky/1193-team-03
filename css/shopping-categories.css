@@ -1,3 +1,4 @@
+
 .categories {
     text-align: center;
     padding: 50px 20px;
@@ -12,10 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    margin: 60px auto 30px auto;
 }
 
 .container {
@@ -30,9 +28,7 @@
     font-size: 48px;
     margin-bottom: 40px;
     font-family: "Philosopher", sans-serif;
-
 }
-
 
 .category {
     margin-bottom: 40px;
@@ -51,9 +47,7 @@
 .category h3 span {
     font-weight: normal;
     color: #b0b0b0;
-    font-family: Philosopher, sans-serif;
     font-size: 32px;
-    font-weight: 400;
 }
 
 .category p {
@@ -63,8 +57,7 @@
     line-height: 25.5px;
     font-weight: 400;
     width: 535px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     color: rgb(220, 220, 220);
 }
 
@@ -92,4 +85,77 @@
     width: 100%;
     left: 0;
     transform: none;
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+    .container {
+        margin-bottom: 30px;
+    }
+    .category {
+        margin-bottom: 50px;
+    }
+    .category h3 {
+        font-size: 42px;
+    }
+    .category p {
+        width: 70%;
+    }
+    .shop-link {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .container {
+        margin-bottom: 20px;
+    }
+    .category {
+        margin-bottom: 40px;
+    }
+    .category h3 {
+        font-size: 36px;
+    }
+    .category p {
+        width: 70%;
+    }
+    .shop-link {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        margin-bottom: 20px;
+    }
+    .category {
+        margin-bottom: 30px;
+    }
+    .category h3 {
+        font-size: 30px;
+    }
+    .category p {
+        width: 80%;
+    }
+    .shop-link {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        margin-bottom: 10px;
+    }
+    .category {
+        margin-bottom: 20px;
+    }
+    .category h3 {
+        font-size: 24px;
+    }
+    .category p {
+        width: 90%;
+    }
+    .shop-link {
+        font-size: 12px;
+    }
 }
