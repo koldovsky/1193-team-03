@@ -30,7 +30,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    flex-wrap: wrap; /* Ensure the content wraps on smaller screens */
 }
 
 .partners_smalltextblock {
@@ -48,6 +47,14 @@
     font-size: 14px;
     color: rgb(132, 120, 104);
     margin: 0;
+}
+
+.partners_text {
+    width: 520px;
+    height: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .partners_bigtext {
@@ -134,7 +141,7 @@
     }
 
     .partners_image {
-        order: 2; /* Ensure the image section comes after the text */
+        order: 3; /* Ensure the image section comes after the text and grid */
         margin-top: 20px; /* Reduce the top margin for better spacing */
         margin-left: 0; /* Remove margin on smaller screens */
         width: 100%;
