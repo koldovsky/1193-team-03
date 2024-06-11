@@ -16,10 +16,10 @@
     justify-content: center;
     align-items: center;
     font-family: Philosopher, sans-serif;
-  font-size: 34px;
-  font-weight: 400;
-  margin-bottom: 45px;
-  line-height: 41px;
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 45px;
+    line-height: 41px;
 }
 
 .partners_content {
@@ -30,10 +30,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    flex-wrap: wrap; /* Ensure the content wraps on smaller screens */
 }
-partners_smalltextblock{
+.partners_smalltextblock{
     display: flex;
-  align-items: center;
+    align-items: center;
 }
 .partners_text {
     width: 520px;
@@ -41,23 +42,23 @@ partners_smalltextblock{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
 }
+
 .partners_icon {
     width: 20px;
-  height: auto;
+    height: auto;
 }
+
 .partners_text h2 {
-  font-size: 14px;
-  color:rgb(132,120,104);
-  margin: 0;
+    font-size: 14px;
+    color:rgb(132,120,104);
+    margin: 0;
 }
 
 .partners_bigtext {
     font-size: 2.5rem;
     margin: 10px 0;
     color: #333;
-    
 }
 
 .partners_maintext {
@@ -118,11 +119,11 @@ partners_smalltextblock{
 
     .partners_icons {
         grid-template-columns: repeat(2, 1fr);
-        margin:auto
+        margin:auto;
     }
 
     .partners_image {
-        margin-top: 50px;
+        margin-top: 20px; /* Reduce the top margin for better spacing */
         margin-left: 0; /* Remove margin on smaller screens */
         width: 100%;
     }
