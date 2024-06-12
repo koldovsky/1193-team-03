@@ -14,8 +14,6 @@
 .logo {
   width: 70px;
   height: 35px;
-  display: block; /* Ensure logo is a block element */
-  margin: 0 auto; /* Center the logo horizontally */
 }
 
 .projects-title {
@@ -23,7 +21,6 @@
   color: rgb(132, 120, 104);
   font-weight: bold;
   font-size: 13px;
-  text-align: center; /* Center the title */
 }
 
 .projects {
@@ -32,10 +29,11 @@
   line-height: 1.5;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 50px;
   padding: 20px;
   max-width: 1100px; 
-  margin: 0 auto; /* Center the projects container */
+  margin: 0 auto; 
 }
 
 .projects-section h1 {
@@ -43,14 +41,13 @@
   font-weight: normal;  
   margin-bottom: 40px;
   color: #333;
-  text-align: center; /* Center the section title */
 }
 
 .project {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 100%; /* Maintain aspect ratio */
+  padding-top: 100%; 
 }
 
 .project img {
