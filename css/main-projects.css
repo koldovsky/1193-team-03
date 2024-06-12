@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 .header {
   text-align: center;
   margin-bottom: 20px; 
@@ -15,17 +14,20 @@
 .logo {
   width: 70px;
   height: 35px;
+  display: block; /* Ensure logo is a block element */
+  margin: 0 auto; /* Center the logo horizontally */
 }
 
 .projects-title {
   font-family: 'Albert Sans', sans-serif; 
-  color:rgb(132,120,104);
+  color: rgb(132, 120, 104);
   font-weight: bold;
   font-size: 13px;
+  text-align: center; /* Center the title */
 }
 
 .projects {
-    font-family: 'Philosopher', sans-serif;
+  font-family: 'Philosopher', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   display: grid;
@@ -33,7 +35,7 @@
   gap: 50px;
   padding: 20px;
   max-width: 1100px; 
-  margin: 0 auto; 
+  margin: 0 auto; /* Center the projects container */
 }
 
 .projects-section h1 {
@@ -41,13 +43,14 @@
   font-weight: normal;  
   margin-bottom: 40px;
   color: #333;
+  text-align: center; /* Center the section title */
 }
 
 .project {
   position: relative;
   overflow: hidden;
   width: 100%;
-  padding-top: 100%; 
+  padding-top: 100%; /* Maintain aspect ratio */
 }
 
 .project img {
@@ -91,6 +94,7 @@
   font-family: 'Albert Sans', sans-serif;
   font-size: 13px;
 }
+
 .project_footer {
   text-align: center;
   margin: 20px 0; 
