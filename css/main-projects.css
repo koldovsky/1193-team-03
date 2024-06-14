@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.header {
+.header_projects{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   padding-top: 50px;
 }
 
-.header h1 {
+.header_projects h1 {
   font-weight: normal;
   font-size: 48px;
   max-width: 80%; 
