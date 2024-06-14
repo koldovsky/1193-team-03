@@ -99,20 +99,20 @@
   font-size: 13px;
 }
 
-.project_footer {
+.projects_footer {
   text-align: center;
   margin: 20px;
   font-family: 'Philosopher', sans-serif;
   display: block;
 }
 
-.project_footer p {
+.projects_footer p {
   font-size: 32px;
   color: #000000;
   margin: 0; 
 }
 
-.project_footer button {
+.projects_footer button {
   background-color: transparent;
   color: #02776e;
   padding: 0;
