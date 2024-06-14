@@ -103,7 +103,7 @@
   text-align: center;
   margin: 20px 0;
   font-family: 'Philosopher', sans-serif;
-  text-align: center;
+  display: block;
 }
 
 .project_footer p {
