@@ -101,9 +101,18 @@
 
 .projects_footer {
   text-align: center;
-  margin: 20px 0; 
-  font-size: 32px;
+  padding: 20px 0;
+  margin: 0 auto;
   font-family: 'Philosopher', sans-serif;
+  display: block;
+}
+
+.projects_footer p {
+  text-align: center;
+  font-size: 32px;
+  color: #000000;
+  margin: 0; 
+  text-align: center;
 }
 
 .projects_footer button {
@@ -114,6 +123,6 @@
   cursor: pointer;
   font-size: 16px;
   text-decoration: underline;
-  font-family: 'Albert Sans', sans-serif; 
+  font-family: 'Albert Sans', sans-serif;
   font-weight: bold;
 }
