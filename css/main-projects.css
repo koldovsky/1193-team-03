@@ -101,8 +101,8 @@
 
 .project_footer {
   text-align: center;
-  margin: 20px 0;
-  font-family: 'Philosopher', sans-serif;
+  margin: 20px;
+  font-family: 'Philosopher', sans-serif; !important
   display: block;
 }
 
