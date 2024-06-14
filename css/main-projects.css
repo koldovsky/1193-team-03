@@ -103,12 +103,13 @@
   text-align: center;
   margin: 20px 0;
   font-family: 'Philosopher', sans-serif;
+  text-align: center;
 }
 
 .project_footer p {
   font-size: 32px;
   color: #000000;
-  margin: 0; /* Adjust margin as per your design */
+  margin: 0; 
 }
 
 .project_footer button {
