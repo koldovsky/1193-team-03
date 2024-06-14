@@ -101,15 +101,17 @@
 
 .project_footer {
   text-align: center;
-  margin: 20px;
-  font-family: 'Philosopher', sans-serif; !important
+  margin: 20px auto;
+  font-family: 'Philosopher', sans-serif; 
   display: block;
-}
+  line-height: 1.5; 
+  height: 70px; 
 
 .project_footer p {
-  font-size: 32px;
+  font-size: 24px; 
   color: #000000;
-  margin: 0; 
+  margin: 0;
+  font-family: 'Philosopher', sans-serif; 
 }
 
 .project_footer button {
