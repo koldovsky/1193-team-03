@@ -103,6 +103,8 @@
   text-align: center;
   margin: 20px 0;
   font-size: 32px;
+  color: black;
+  font-family: 'Philosopher', sans-serif;
 }
 
 .project_footer button {
