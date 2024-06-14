@@ -101,7 +101,7 @@
 
 .projects_footer {
   text-align: center;
-  margin: 20px;
+  margin: 20px auto;
   font-family: 'Philosopher', sans-serif;
   display: block;
 }
